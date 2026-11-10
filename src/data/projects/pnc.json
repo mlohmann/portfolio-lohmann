@@ -1,0 +1,75 @@
+{
+  "title": "PNC XMas Price Index",
+  "text": "I developed JavaScript for the data display in PNC’s 2012 Christmas Price Index experience. The site paired the annual pricing of gifts from “The Twelve Days of Christmas” with a worldwide gift hunt built around Google Street View. Visitors could examine the total index and the price history of individual gifts in dedicated data screens. My work focused on that presentation of the numbers within the larger campaign. The project received FWA Site of the Day and the Cutting Edge Award.",
+  "summary": "I developed JavaScript for the data display in PNC’s Christmas Price Index experience, presenting historical gift prices alongside an award-winning global gift hunt.",
+  "preview": {
+    "src": "pnc_preview.jpg"
+  },
+  "thumbnail": {
+    "src": "pnc_thumb.jpg",
+    "height": 870,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "pnc_1.jpg",
+      "height": 490,
+      "width": 900,
+      "alt": "PNC Christmas Price Index interactive homepage featuring festive illustrations"
+    },
+    {
+      "src": "pnc_2.jpg",
+      "height": 489,
+      "width": 900,
+      "alt": "Interactive economic chart tracking the price of the 12 Days of Christmas gifts since 1984"
+    },
+    {
+      "src": "pnc_3.jpg",
+      "height": 491,
+      "width": 900,
+      "alt": "Economic analysis view comparing consumer price index inflation to holiday gift costs"
+    },
+    {
+      "src": "pnc_5.jpg",
+      "height": 492,
+      "width": 900,
+      "alt": "Interactive gift hunt game finding hidden holiday items in an animated landscape"
+    },
+    {
+      "src": "pnc_6.jpg",
+      "height": 490,
+      "width": 900,
+      "alt": "Gameplay challenge locating six geese-a-laying and eight maids-a-milking"
+    },
+    {
+      "src": "pnc_7.jpg",
+      "height": 492,
+      "width": 900,
+      "alt": "Completed game summary showing total cost of gifts and personal completion time"
+    },
+    {
+      "src": "pnc_8.jpg",
+      "height": 490,
+      "width": 900,
+      "alt": "Interactive classroom lesson module teaching basic financial literacy"
+    },
+    {
+      "src": "pnc_9.jpg",
+      "height": 491,
+      "width": 900,
+      "alt": "Downloadable activity sheets and economic lesson plans for schools"
+    },
+    {
+      "src": "pnc_10.jpg",
+      "height": 491,
+      "width": 900,
+      "alt": "Media kit and comprehensive historical pricing data tables for journalists"
+    }
+  ],
+  "duties": ["Javascript Development"],
+  "launchURL": ["http://pncchristmaspriceindex.com"],
+  "active": false,
+  "client": "PNC Bank",
+  "fwa": true,
+  "rank": 3
+}

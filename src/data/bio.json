@@ -1,0 +1,34 @@
+{
+  "bio": [
+    {
+      "years": "1997-2001",
+      "location": "University of Arizona - Tucson, AZ",
+      "text": "I began studies in Architecture at the University of Arizona, then I switched to earn a BFA in Visual Communications and Minor in Media Arts."
+    },
+    {
+      "years": "2004-2005",
+      "location": "Bath, England",
+      "text": "Living in the UK and telecommuting to the US. Also spent time being a roadie for a metal band touring England."
+    },
+    {
+      "years": "2005-2010",
+      "location": "Boston, MA",
+      "text": "Started working for PUMA's international office and switched over to Almighty and worked on New Balance projects."
+    },
+    {
+      "years": "2010-2014",
+      "location": "New York, NY",
+      "text": "Worked for SYRUP, B-Reel and Local Projects and loved being in Brooklyn"
+    },
+    {
+      "years": "2014-2017",
+      "location": "Atkinson, NH - Breukelen Acres",
+      "text": "Homesteading and telecommuting to NYC"
+    },
+    {
+      "years": "2017-PRESENT",
+      "location": "Seattle, WA - Puget Sound",
+      "text": "Island life and telecommuting to work"
+    }
+  ]
+}

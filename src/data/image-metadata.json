@@ -1,0 +1,2440 @@
+{
+  "/screens/PUMA_Golf_Bling01.jpg": {
+    "width": 700,
+    "height": 403,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/PUMA_Golf_Bling01.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/PUMA_Golf_Bling01.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/PUMA_Golf_Bling03.jpg": {
+    "width": 700,
+    "height": 403,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/PUMA_Golf_Bling03.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/PUMA_Golf_Bling03.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/UM_SS07_Bike_02.jpg": {
+    "width": 936,
+    "height": 654,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/UM_SS07_Bike_02.jpg.480.webp"
+      },
+      {
+        "width": 936,
+        "src": "/optimized/screens/UM_SS07_Bike_02.jpg.936.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_1.jpg": {
+    "width": 1000,
+    "height": 820,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_1.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_1.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_1.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_10.jpg": {
+    "width": 1000,
+    "height": 671,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_10.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_10.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_10.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_2.jpg": {
+    "width": 1000,
+    "height": 820,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_2.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_2.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_2.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_3.jpg": {
+    "width": 1000,
+    "height": 670,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_3.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_3.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_3.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_4.jpg": {
+    "width": 1000,
+    "height": 820,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_4.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_4.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_4.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_5.jpg": {
+    "width": 1000,
+    "height": 823,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_5.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_5.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_5.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_6.jpg": {
+    "width": 1000,
+    "height": 668,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_6.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_6.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_6.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_7.jpg": {
+    "width": 1000,
+    "height": 663,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_7.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_7.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_7.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_8.jpg": {
+    "width": 1000,
+    "height": 660,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_8.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_8.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_8.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_9.jpg": {
+    "width": 1000,
+    "height": 819,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_9.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_9.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/brookfield_9.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_preview.jpg": {
+    "width": 1196,
+    "height": 870,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/brookfield_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/brookfield_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/brookfield_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/brookfield_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/brookfield_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/bv_1.jpg": {
+    "width": 800,
+    "height": 424,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/bv_1.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/bv_1.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/bv_2.jpg": {
+    "width": 800,
+    "height": 425,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/bv_2.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/bv_2.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/bv_3.jpg": {
+    "width": 800,
+    "height": 423,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/bv_3.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/bv_3.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/bv_4.jpg": {
+    "width": 800,
+    "height": 423,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/bv_4.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/bv_4.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/bv_5.jpg": {
+    "width": 800,
+    "height": 424,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/bv_5.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/bv_5.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/bv_6.jpg": {
+    "width": 800,
+    "height": 424,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/bv_6.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/bv_6.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/bv_preview.jpg": {
+    "width": 1196,
+    "height": 870,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/bv_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/bv_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/bv_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/bv_thumb.jpg": {
+    "width": 424,
+    "height": 424,
+    "variants": [
+      {
+        "width": 424,
+        "src": "/optimized/screens/bv_thumb.jpg.424.webp"
+      }
+    ]
+  },
+  "/screens/chuck_1.jpg": {
+    "width": 909,
+    "height": 692,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/chuck_1.jpg.480.webp"
+      },
+      {
+        "width": 909,
+        "src": "/optimized/screens/chuck_1.jpg.909.webp"
+      }
+    ]
+  },
+  "/screens/chuck_2.jpg": {
+    "width": 907,
+    "height": 692,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/chuck_2.jpg.480.webp"
+      },
+      {
+        "width": 907,
+        "src": "/optimized/screens/chuck_2.jpg.907.webp"
+      }
+    ]
+  },
+  "/screens/chuck_3.jpg": {
+    "width": 908,
+    "height": 689,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/chuck_3.jpg.480.webp"
+      },
+      {
+        "width": 908,
+        "src": "/optimized/screens/chuck_3.jpg.908.webp"
+      }
+    ]
+  },
+  "/screens/chuck_4.jpg": {
+    "width": 907,
+    "height": 694,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/chuck_4.jpg.480.webp"
+      },
+      {
+        "width": 907,
+        "src": "/optimized/screens/chuck_4.jpg.907.webp"
+      }
+    ]
+  },
+  "/screens/chuck_5.jpg": {
+    "width": 908,
+    "height": 692,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/chuck_5.jpg.480.webp"
+      },
+      {
+        "width": 908,
+        "src": "/optimized/screens/chuck_5.jpg.908.webp"
+      }
+    ]
+  },
+  "/screens/chuck_preview.jpg": {
+    "width": 1196,
+    "height": 870,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/chuck_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/chuck_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/chuck_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/chuck_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/chuck_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/dallas_1.jpg": {
+    "width": 899,
+    "height": 664,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dallas_1.jpg.480.webp"
+      },
+      {
+        "width": 899,
+        "src": "/optimized/screens/dallas_1.jpg.899.webp"
+      }
+    ]
+  },
+  "/screens/dallas_2.jpg": {
+    "width": 899,
+    "height": 665,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dallas_2.jpg.480.webp"
+      },
+      {
+        "width": 899,
+        "src": "/optimized/screens/dallas_2.jpg.899.webp"
+      }
+    ]
+  },
+  "/screens/dallas_3.jpg": {
+    "width": 898,
+    "height": 664,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dallas_3.jpg.480.webp"
+      },
+      {
+        "width": 898,
+        "src": "/optimized/screens/dallas_3.jpg.898.webp"
+      }
+    ]
+  },
+  "/screens/dallas_4.jpg": {
+    "width": 900,
+    "height": 665,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dallas_4.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/dallas_4.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/dallas_6.jpg": {
+    "width": 899,
+    "height": 664,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dallas_6.jpg.480.webp"
+      },
+      {
+        "width": 899,
+        "src": "/optimized/screens/dallas_6.jpg.899.webp"
+      }
+    ]
+  },
+  "/screens/dallas_preview.jpg": {
+    "width": 1196,
+    "height": 870,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dallas_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/dallas_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/dallas_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/dallas_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/dallas_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/dmp_1.jpg": {
+    "width": 1420,
+    "height": 971,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dmp_1.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/dmp_1.jpg.960.webp"
+      },
+      {
+        "width": 1420,
+        "src": "/optimized/screens/dmp_1.jpg.1420.webp"
+      }
+    ]
+  },
+  "/screens/dmp_2.jpg": {
+    "width": 1420,
+    "height": 2327,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dmp_2.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/dmp_2.jpg.960.webp"
+      },
+      {
+        "width": 1420,
+        "src": "/optimized/screens/dmp_2.jpg.1420.webp"
+      }
+    ]
+  },
+  "/screens/dmp_3.jpg": {
+    "width": 1420,
+    "height": 2455,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dmp_3.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/dmp_3.jpg.960.webp"
+      },
+      {
+        "width": 1420,
+        "src": "/optimized/screens/dmp_3.jpg.1420.webp"
+      }
+    ]
+  },
+  "/screens/dmp_4.jpg": {
+    "width": 1420,
+    "height": 2846,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dmp_4.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/dmp_4.jpg.960.webp"
+      },
+      {
+        "width": 1420,
+        "src": "/optimized/screens/dmp_4.jpg.1420.webp"
+      }
+    ]
+  },
+  "/screens/dmp_preview.jpg": {
+    "width": 1196,
+    "height": 870,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/dmp_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/dmp_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/dmp_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/dmp_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/dmp_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/eji_1.png": {
+    "width": 2690,
+    "height": 1514,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/eji_1.png.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/eji_1.png.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/eji_1.png.1440.webp"
+      }
+    ]
+  },
+  "/screens/eji_2.png": {
+    "width": 2690,
+    "height": 1518,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/eji_2.png.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/eji_2.png.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/eji_2.png.1440.webp"
+      }
+    ]
+  },
+  "/screens/eji_3.png": {
+    "width": 2692,
+    "height": 1520,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/eji_3.png.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/eji_3.png.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/eji_3.png.1440.webp"
+      }
+    ]
+  },
+  "/screens/eji_4.jpg": {
+    "width": 2694,
+    "height": 1520,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/eji_4.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/eji_4.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/eji_4.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/eji_4.png": {
+    "width": 2694,
+    "height": 1520,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/eji_4.png.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/eji_4.png.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/eji_4.png.1440.webp"
+      }
+    ]
+  },
+  "/screens/eji_6.jpg": {
+    "width": 1080,
+    "height": 1920,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/eji_6.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/eji_6.jpg.960.webp"
+      },
+      {
+        "width": 1080,
+        "src": "/optimized/screens/eji_6.jpg.1080.webp"
+      }
+    ]
+  },
+  "/screens/eji_7.jpg": {
+    "width": 1080,
+    "height": 1920,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/eji_7.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/eji_7.jpg.960.webp"
+      },
+      {
+        "width": 1080,
+        "src": "/optimized/screens/eji_7.jpg.1080.webp"
+      }
+    ]
+  },
+  "/screens/eji_preview.jpg": {
+    "width": 1196,
+    "height": 897,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/eji_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/eji_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/eji_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/eji_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/eji_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/ike-legacy-1.jpg": {
+    "width": 1629,
+    "height": 908,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike-legacy-1.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike-legacy-1.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/ike-legacy-1.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/ike-legacy-2.jpg": {
+    "width": 1642,
+    "height": 904,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike-legacy-2.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike-legacy-2.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/ike-legacy-2.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/ike-legacy-3.jpg": {
+    "width": 1626,
+    "height": 902,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike-legacy-3.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike-legacy-3.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/ike-legacy-3.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/ike-legacy-4.jpg": {
+    "width": 1625,
+    "height": 902,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike-legacy-4.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike-legacy-4.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/ike-legacy-4.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/ike-timeline-1.jpg": {
+    "width": 1589,
+    "height": 909,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike-timeline-1.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike-timeline-1.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/ike-timeline-1.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/ike-timeline-2.jpg": {
+    "width": 1593,
+    "height": 909,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike-timeline-2.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike-timeline-2.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/ike-timeline-2.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/ike-timeline-3.jpg": {
+    "width": 1584,
+    "height": 909,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike-timeline-3.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike-timeline-3.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/ike-timeline-3.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/ike-timeline-4.jpg": {
+    "width": 1592,
+    "height": 907,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike-timeline-4.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike-timeline-4.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/ike-timeline-4.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/ike_1.jpg": {
+    "width": 1420,
+    "height": 785,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike_1.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike_1.jpg.960.webp"
+      },
+      {
+        "width": 1420,
+        "src": "/optimized/screens/ike_1.jpg.1420.webp"
+      }
+    ]
+  },
+  "/screens/ike_2.jpg": {
+    "width": 1420,
+    "height": 785,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike_2.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike_2.jpg.960.webp"
+      },
+      {
+        "width": 1420,
+        "src": "/optimized/screens/ike_2.jpg.1420.webp"
+      }
+    ]
+  },
+  "/screens/ike_3.jpg": {
+    "width": 1420,
+    "height": 785,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike_3.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike_3.jpg.960.webp"
+      },
+      {
+        "width": 1420,
+        "src": "/optimized/screens/ike_3.jpg.1420.webp"
+      }
+    ]
+  },
+  "/screens/ike_4.jpg": {
+    "width": 1420,
+    "height": 785,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike_4.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike_4.jpg.960.webp"
+      },
+      {
+        "width": 1420,
+        "src": "/optimized/screens/ike_4.jpg.1420.webp"
+      }
+    ]
+  },
+  "/screens/ike_preview.jpg": {
+    "width": 1196,
+    "height": 797,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/ike_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/ike_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/ike_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/ike_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/ike_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/lp-1.jpg": {
+    "width": 1314,
+    "height": 731,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/lp-1.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/lp-1.jpg.960.webp"
+      },
+      {
+        "width": 1314,
+        "src": "/optimized/screens/lp-1.jpg.1314.webp"
+      }
+    ]
+  },
+  "/screens/lp-2.jpg": {
+    "width": 1627,
+    "height": 905,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/lp-2.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/lp-2.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/lp-2.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/lp-3.jpg": {
+    "width": 1624,
+    "height": 884,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/lp-3.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/lp-3.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/lp-3.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/lp-4.jpg": {
+    "width": 1627,
+    "height": 907,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/lp-4.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/lp-4.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/lp-4.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/lp-5.jpg": {
+    "width": 1628,
+    "height": 906,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/lp-5.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/lp-5.jpg.960.webp"
+      },
+      {
+        "width": 1440,
+        "src": "/optimized/screens/lp-5.jpg.1440.webp"
+      }
+    ]
+  },
+  "/screens/lp_preview.jpg": {
+    "width": 1196,
+    "height": 797,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/lp_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/lp_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/lp_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/lp_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/lp_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/mbbq1.jpg": {
+    "width": 700,
+    "height": 474,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mbbq1.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/mbbq1.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/mbbq2.jpg": {
+    "width": 700,
+    "height": 486,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mbbq2.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/mbbq2.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/mbbq3.jpg": {
+    "width": 700,
+    "height": 455,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mbbq3.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/mbbq3.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/mj_1.jpg": {
+    "width": 800,
+    "height": 506,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mj_1.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/mj_1.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/mj_2.jpg": {
+    "width": 800,
+    "height": 505,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mj_2.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/mj_2.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/mj_3.jpg": {
+    "width": 800,
+    "height": 503,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mj_3.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/mj_3.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/mj_4.jpg": {
+    "width": 800,
+    "height": 506,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mj_4.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/mj_4.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/mj_5.jpg": {
+    "width": 800,
+    "height": 506,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mj_5.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/mj_5.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/mj_6.jpg": {
+    "width": 554,
+    "height": 600,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mj_6.jpg.480.webp"
+      },
+      {
+        "width": 554,
+        "src": "/optimized/screens/mj_6.jpg.554.webp"
+      }
+    ]
+  },
+  "/screens/mj_preview.jpg": {
+    "width": 1196,
+    "height": 870,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mj_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/mj_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/mj_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/mj_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/mj_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/moto1.jpg": {
+    "width": 700,
+    "height": 467,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/moto1.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/moto1.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/mymotor_1.jpg": {
+    "width": 950,
+    "height": 547,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mymotor_1.jpg.480.webp"
+      },
+      {
+        "width": 950,
+        "src": "/optimized/screens/mymotor_1.jpg.950.webp"
+      }
+    ]
+  },
+  "/screens/mymotor_2.jpg": {
+    "width": 950,
+    "height": 493,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mymotor_2.jpg.480.webp"
+      },
+      {
+        "width": 950,
+        "src": "/optimized/screens/mymotor_2.jpg.950.webp"
+      }
+    ]
+  },
+  "/screens/mymotor_preview.jpg": {
+    "width": 1196,
+    "height": 870,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/mymotor_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/mymotor_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/mymotor_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/mymotor_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/mymotor_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/nb365_1.jpg": {
+    "width": 717,
+    "height": 513,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nb365_1.jpg.480.webp"
+      },
+      {
+        "width": 717,
+        "src": "/optimized/screens/nb365_1.jpg.717.webp"
+      }
+    ]
+  },
+  "/screens/nb365_2.jpg": {
+    "width": 717,
+    "height": 509,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nb365_2.jpg.480.webp"
+      },
+      {
+        "width": 717,
+        "src": "/optimized/screens/nb365_2.jpg.717.webp"
+      }
+    ]
+  },
+  "/screens/nb365_3.jpg": {
+    "width": 715,
+    "height": 511,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nb365_3.jpg.480.webp"
+      },
+      {
+        "width": 715,
+        "src": "/optimized/screens/nb365_3.jpg.715.webp"
+      }
+    ]
+  },
+  "/screens/nb365_4.jpg": {
+    "width": 717,
+    "height": 510,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nb365_4.jpg.480.webp"
+      },
+      {
+        "width": 717,
+        "src": "/optimized/screens/nb365_4.jpg.717.webp"
+      }
+    ]
+  },
+  "/screens/newbalance_1.jpg": {
+    "width": 700,
+    "height": 318,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/newbalance_1.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/newbalance_1.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/newbalance_1_b.jpg": {
+    "width": 700,
+    "height": 627,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/newbalance_1_b.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/newbalance_1_b.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/newbalance_2.jpg": {
+    "width": 700,
+    "height": 418,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/newbalance_2.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/newbalance_2.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/newbalance_3.jpg": {
+    "width": 700,
+    "height": 566,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/newbalance_3.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/newbalance_3.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/newbalance_4.jpg": {
+    "width": 699,
+    "height": 562,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/newbalance_4.jpg.480.webp"
+      },
+      {
+        "width": 699,
+        "src": "/optimized/screens/newbalance_4.jpg.699.webp"
+      }
+    ]
+  },
+  "/screens/newbalance_preview.jpg": {
+    "width": 1196,
+    "height": 787,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/newbalance_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/newbalance_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/newbalance_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/newbalance_thumb.jpg": {
+    "width": 270,
+    "height": 270,
+    "variants": [
+      {
+        "width": 270,
+        "src": "/optimized/screens/newbalance_thumb.jpg.270.webp"
+      }
+    ]
+  },
+  "/screens/nstmf_1.jpg": {
+    "width": 1000,
+    "height": 666,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nstmf_1.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nstmf_1.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/nstmf_1.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/nstmf_2.jpg": {
+    "width": 451,
+    "height": 1000,
+    "variants": [
+      {
+        "width": 451,
+        "src": "/optimized/screens/nstmf_2.jpg.451.webp"
+      }
+    ]
+  },
+  "/screens/nstmf_3.jpg": {
+    "width": 1000,
+    "height": 669,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nstmf_3.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nstmf_3.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/nstmf_3.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/nstmf_4.jpg": {
+    "width": 1000,
+    "height": 668,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nstmf_4.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nstmf_4.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/nstmf_4.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/nstmf_5.jpg": {
+    "width": 1000,
+    "height": 669,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nstmf_5.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nstmf_5.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/nstmf_5.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/nstmf_6.jpg": {
+    "width": 1000,
+    "height": 671,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nstmf_6.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nstmf_6.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/nstmf_6.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/nstmf_7.jpg": {
+    "width": 1000,
+    "height": 666,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nstmf_7.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nstmf_7.jpg.960.webp"
+      },
+      {
+        "width": 1000,
+        "src": "/optimized/screens/nstmf_7.jpg.1000.webp"
+      }
+    ]
+  },
+  "/screens/nstmf_preview.jpg": {
+    "width": 1196,
+    "height": 797,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nstmf_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nstmf_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/nstmf_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/nstmf_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/nstmf_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/nwe_1.jpg": {
+    "width": 1404,
+    "height": 877,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nwe_1.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nwe_1.jpg.960.webp"
+      },
+      {
+        "width": 1404,
+        "src": "/optimized/screens/nwe_1.jpg.1404.webp"
+      }
+    ]
+  },
+  "/screens/nwe_2.jpg": {
+    "width": 1420,
+    "height": 2265,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nwe_2.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nwe_2.jpg.960.webp"
+      },
+      {
+        "width": 1420,
+        "src": "/optimized/screens/nwe_2.jpg.1420.webp"
+      }
+    ]
+  },
+  "/screens/nwe_preview.jpg": {
+    "width": 1196,
+    "height": 797,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/nwe_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/nwe_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/nwe_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/nwe_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/nwe_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/pnc_1.jpg": {
+    "width": 900,
+    "height": 490,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_1.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/pnc_1.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/pnc_10.jpg": {
+    "width": 900,
+    "height": 491,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_10.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/pnc_10.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/pnc_2.jpg": {
+    "width": 900,
+    "height": 489,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_2.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/pnc_2.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/pnc_3.jpg": {
+    "width": 900,
+    "height": 491,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_3.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/pnc_3.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/pnc_5.jpg": {
+    "width": 900,
+    "height": 492,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_5.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/pnc_5.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/pnc_6.jpg": {
+    "width": 900,
+    "height": 490,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_6.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/pnc_6.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/pnc_7.jpg": {
+    "width": 900,
+    "height": 492,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_7.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/pnc_7.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/pnc_8.jpg": {
+    "width": 900,
+    "height": 490,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_8.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/pnc_8.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/pnc_9.jpg": {
+    "width": 900,
+    "height": 491,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_9.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/screens/pnc_9.jpg.900.webp"
+      }
+    ]
+  },
+  "/screens/pnc_preview.jpg": {
+    "width": 1196,
+    "height": 870,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pnc_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/pnc_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/pnc_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/pnc_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/pnc_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/puma1.jpg": {
+    "width": 700,
+    "height": 452,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/puma1.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/puma1.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/puma2.jpg": {
+    "width": 700,
+    "height": 447,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/puma2.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/puma2.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/puma_preview.jpg": {
+    "width": 1196,
+    "height": 787,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/puma_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/puma_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/puma_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/puma_thumb.jpg": {
+    "width": 270,
+    "height": 270,
+    "variants": [
+      {
+        "width": 270,
+        "src": "/optimized/screens/puma_thumb.jpg.270.webp"
+      }
+    ]
+  },
+  "/screens/puma_women_1.jpg": {
+    "width": 930,
+    "height": 640,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/puma_women_1.jpg.480.webp"
+      },
+      {
+        "width": 930,
+        "src": "/optimized/screens/puma_women_1.jpg.930.webp"
+      }
+    ]
+  },
+  "/screens/pumarunning1.jpg": {
+    "width": 700,
+    "height": 397,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/pumarunning1.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/pumarunning1.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/schemer_1.jpg": {
+    "width": 875,
+    "height": 728,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/schemer_1.jpg.480.webp"
+      },
+      {
+        "width": 875,
+        "src": "/optimized/screens/schemer_1.jpg.875.webp"
+      }
+    ]
+  },
+  "/screens/schemer_2.jpg": {
+    "width": 874,
+    "height": 728,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/schemer_2.jpg.480.webp"
+      },
+      {
+        "width": 874,
+        "src": "/optimized/screens/schemer_2.jpg.874.webp"
+      }
+    ]
+  },
+  "/screens/schemer_3.jpg": {
+    "width": 871,
+    "height": 731,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/schemer_3.jpg.480.webp"
+      },
+      {
+        "width": 871,
+        "src": "/optimized/screens/schemer_3.jpg.871.webp"
+      }
+    ]
+  },
+  "/screens/schemer_4.jpg": {
+    "width": 874,
+    "height": 733,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/schemer_4.jpg.480.webp"
+      },
+      {
+        "width": 874,
+        "src": "/optimized/screens/schemer_4.jpg.874.webp"
+      }
+    ]
+  },
+  "/screens/schemer_5.jpg": {
+    "width": 873,
+    "height": 733,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/schemer_5.jpg.480.webp"
+      },
+      {
+        "width": 873,
+        "src": "/optimized/screens/schemer_5.jpg.873.webp"
+      }
+    ]
+  },
+  "/screens/schemer_preview.jpg": {
+    "width": 1196,
+    "height": 870,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/schemer_preview.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/schemer_preview.jpg.960.webp"
+      },
+      {
+        "width": 1196,
+        "src": "/optimized/screens/schemer_preview.jpg.1196.webp"
+      }
+    ]
+  },
+  "/screens/schemer_thumb.jpg": {
+    "width": 200,
+    "height": 200,
+    "variants": [
+      {
+        "width": 200,
+        "src": "/optimized/screens/schemer_thumb.jpg.200.webp"
+      }
+    ]
+  },
+  "/screens/scigames_1.jpg": {
+    "width": 1024,
+    "height": 768,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/scigames_1.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/scigames_1.jpg.960.webp"
+      },
+      {
+        "width": 1024,
+        "src": "/optimized/screens/scigames_1.jpg.1024.webp"
+      }
+    ]
+  },
+  "/screens/scigames_2.jpg": {
+    "width": 1024,
+    "height": 768,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/scigames_2.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/scigames_2.jpg.960.webp"
+      },
+      {
+        "width": 1024,
+        "src": "/optimized/screens/scigames_2.jpg.1024.webp"
+      }
+    ]
+  },
+  "/screens/scigames_3.jpg": {
+    "width": 1024,
+    "height": 768,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/scigames_3.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/scigames_3.jpg.960.webp"
+      },
+      {
+        "width": 1024,
+        "src": "/optimized/screens/scigames_3.jpg.1024.webp"
+      }
+    ]
+  },
+  "/screens/scigames_4.jpg": {
+    "width": 1024,
+    "height": 766,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/scigames_4.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/scigames_4.jpg.960.webp"
+      },
+      {
+        "width": 1024,
+        "src": "/optimized/screens/scigames_4.jpg.1024.webp"
+      }
+    ]
+  },
+  "/screens/scigames_5.jpg": {
+    "width": 1024,
+    "height": 767,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/scigames_5.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/screens/scigames_5.jpg.960.webp"
+      },
+      {
+        "width": 1024,
+        "src": "/optimized/screens/scigames_5.jpg.1024.webp"
+      }
+    ]
+  },
+  "/screens/train1.jpg": {
+    "width": 800,
+    "height": 550,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/train1.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/train1.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/train2.jpg": {
+    "width": 800,
+    "height": 550,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/train2.jpg.480.webp"
+      },
+      {
+        "width": 800,
+        "src": "/optimized/screens/train2.jpg.800.webp"
+      }
+    ]
+  },
+  "/screens/um1.jpg": {
+    "width": 700,
+    "height": 474,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/um1.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/um1.jpg.700.webp"
+      }
+    ]
+  },
+  "/screens/wanders1.jpg": {
+    "width": 700,
+    "height": 474,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/screens/wanders1.jpg.480.webp"
+      },
+      {
+        "width": 700,
+        "src": "/optimized/screens/wanders1.jpg.700.webp"
+      }
+    ]
+  },
+  "/press-images/bkflpl.jpg": {
+    "width": 1400,
+    "height": 871,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/press-images/bkflpl.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/press-images/bkflpl.jpg.960.webp"
+      },
+      {
+        "width": 1400,
+        "src": "/optimized/press-images/bkflpl.jpg.1400.webp"
+      }
+    ]
+  },
+  "/press-images/broadway.jpg": {
+    "width": 1400,
+    "height": 788,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/press-images/broadway.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/press-images/broadway.jpg.960.webp"
+      },
+      {
+        "width": 1400,
+        "src": "/optimized/press-images/broadway.jpg.1400.webp"
+      }
+    ]
+  },
+  "/press-images/canon.jpg": {
+    "width": 681,
+    "height": 383,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/press-images/canon.jpg.480.webp"
+      },
+      {
+        "width": 681,
+        "src": "/optimized/press-images/canon.jpg.681.webp"
+      }
+    ]
+  },
+  "/press-images/legacy.jpg": {
+    "width": 1024,
+    "height": 576,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/press-images/legacy.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/press-images/legacy.jpg.960.webp"
+      },
+      {
+        "width": 1024,
+        "src": "/optimized/press-images/legacy.jpg.1024.webp"
+      }
+    ]
+  },
+  "/press-images/mithras.jpg": {
+    "width": 818,
+    "height": 546,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/press-images/mithras.jpg.480.webp"
+      },
+      {
+        "width": 818,
+        "src": "/optimized/press-images/mithras.jpg.818.webp"
+      }
+    ]
+  },
+  "/press-images/pnc.jpg": {
+    "width": 900,
+    "height": 575,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/press-images/pnc.jpg.480.webp"
+      },
+      {
+        "width": 900,
+        "src": "/optimized/press-images/pnc.jpg.900.webp"
+      }
+    ]
+  },
+  "/press-images/puma.jpg": {
+    "width": 1400,
+    "height": 871,
+    "variants": [
+      {
+        "width": 480,
+        "src": "/optimized/press-images/puma.jpg.480.webp"
+      },
+      {
+        "width": 960,
+        "src": "/optimized/press-images/puma.jpg.960.webp"
+      },
+      {
+        "width": 1400,
+        "src": "/optimized/press-images/puma.jpg.1400.webp"
+      }
+    ]
+  },
+  "/logos/aol.png": {
+    "width": 125,
+    "height": 109
+  },
+  "/logos/bv.png": {
+    "width": 200,
+    "height": 34
+  },
+  "/logos/calvin-klein.png": {
+    "width": 200,
+    "height": 51
+  },
+  "/logos/canon.png": {
+    "width": 200,
+    "height": 48
+  },
+  "/logos/eji.png": {
+    "width": 115,
+    "height": 115
+  },
+  "/logos/ffg.png": {
+    "width": 191,
+    "height": 165
+  },
+  "/logos/google-logo.png": {
+    "width": 200,
+    "height": 69
+  },
+  "/logos/harvard.png": {
+    "width": 191,
+    "height": 180
+  },
+  "/logos/made-in-ny.png": {
+    "width": 125,
+    "height": 130
+  },
+  "/logos/marc-jacobs.png": {
+    "width": 200,
+    "height": 23
+  },
+  "/logos/marshalls.png": {
+    "width": 200,
+    "height": 39
+  },
+  "/logos/nb.png": {
+    "width": 191,
+    "height": 103
+  },
+  "/logos/nysci.png": {
+    "width": 148,
+    "height": 98
+  },
+  "/logos/polo-ralph.png": {
+    "width": 200,
+    "height": 47
+  },
+  "/logos/puma.png": {
+    "width": 191,
+    "height": 109
+  },
+  "/logos/rrf.png": {
+    "width": 191,
+    "height": 34
+  },
+  "/logos/tnt.png": {
+    "width": 125,
+    "height": 126
+  },
+  "/logos/tretorn.png": {
+    "width": 200,
+    "height": 46
+  },
+  "/logos/wb.png": {
+    "width": 125,
+    "height": 163
+  },
+  "/logos/xq.png": {
+    "width": 140,
+    "height": 81
+  }
+}

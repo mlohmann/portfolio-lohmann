@@ -1,0 +1,34 @@
+{
+  "work": [
+    {
+      "years": "2005-2008",
+      "company": "PUMA",
+      "title": "Flash Developer"
+    },
+    {
+      "years": "2008-2010",
+      "company": "Almighty",
+      "title": "Senior Flash Designer"
+    },
+    {
+      "years": "2010-2011",
+      "company": "Syrup",
+      "title": "Flash Developer"
+    },
+    {
+      "years": "2011-2012",
+      "company": "B-Reel",
+      "title": "Senior Developer"
+    },
+    {
+      "years": "2012-2018",
+      "company": "Local Projects",
+      "title": "Creative Technologist"
+    },
+    {
+      "years": "2018-2026",
+      "company": "Oracle Cloud Infrastructure",
+      "title": "Senior Member of Technical Staff"
+    }
+  ]
+}

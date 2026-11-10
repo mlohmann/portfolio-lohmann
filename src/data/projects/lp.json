@@ -1,0 +1,50 @@
+{
+  "title": "Local Projects Official Website",
+  "text": "I built the entire frontend for Local Projects’ studio website, using Python and Flask for page templating alongside SCSS and JavaScript. The site presented work designed for physical spaces, from museum exhibitions to interactive installations. Large project images led into case studies with written context and visual material, while separate sections covered the studio’s people and news. My scope covered the frontend across the site, giving those different types of content a shared presentation. The project pages helped prospective clients understand work that would otherwise be difficult to explain through a single photograph.",
+  "summary": "I built the entire frontend for Local Projects’ studio website, including templates, SCSS, and JavaScript, presenting its experience design work through project imagery and case studies.",
+  "thumbnail": {
+    "src": "lp_thumb.jpg"
+  },
+  "preview": {
+    "src": "lp_preview.jpg",
+    "height": 797,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "lp-1.jpg",
+      "height": 731,
+      "width": 1314,
+      "alt": "Local Projects homepage hero showcasing experience design projects"
+    },
+    {
+      "src": "lp-2.jpg",
+      "height": 905,
+      "width": 1627,
+      "alt": "Case study gallery highlighting interactive installations for major cultural institutions"
+    },
+    {
+      "src": "lp-3.jpg",
+      "height": 884,
+      "width": 1624,
+      "alt": "Project case study page detailing design strategy and creative technology execution"
+    },
+    {
+      "src": "lp-4.jpg",
+      "height": 907,
+      "width": 1627,
+      "alt": "Studio culture and collaborative design process overview"
+    },
+    {
+      "src": "lp-5.jpg",
+      "height": 906,
+      "width": 1628,
+      "alt": "Interactive work index filterable by category and medium"
+    }
+  ],
+  "duties": ["JS/HTML/CSS Development", "CMS Frontend"],
+  "launchURL": ["http://localprojects.com"],
+  "projectDate": 2015,
+  "client": "Local Projects",
+  "rank": 16
+}

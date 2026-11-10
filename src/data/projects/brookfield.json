@@ -1,0 +1,82 @@
+{
+  "title": "Brookfield Place",
+  "text": "I worked on JavaScript development and the CMS frontend for Brookfield Place’s website. Visitors could explore shops and dining, check upcoming events, and find practical information about the Lower Manhattan destination. The site also published editorial stories about what was happening there. A visitor map showed stores across different levels, with controls for changing floors and opening location details. The project brought regularly changing content and location information together, giving people a place to plan a visit and discover more once they arrived.",
+  "summary": "For Brookfield Place’s website, I worked on JavaScript and the CMS frontend, bringing shopping, dining, events, and visitor information together for the Lower Manhattan destination.",
+  "preview": {
+    "src": "brookfield_preview.jpg",
+    "width": 1196,
+    "height": 870
+  },
+  "thumbnail": {
+    "src": "brookfield_thumb.jpg",
+    "height": 870,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "brookfield_1.jpg",
+      "height": 820,
+      "width": 1000,
+      "alt": "Brookfield Place digital portal featuring Lower Manhattan waterfront dining and shopping"
+    },
+    {
+      "src": "brookfield_2.jpg",
+      "height": 820,
+      "width": 1000,
+      "alt": "Interactive retail directory and store locator map"
+    },
+    {
+      "src": "brookfield_3.jpg",
+      "height": 670,
+      "width": 1000,
+      "alt": "Dining pavilion directory showcasing culinary destinations at Hudson Eats"
+    },
+    {
+      "src": "brookfield_4.jpg",
+      "height": 820,
+      "width": 1000,
+      "alt": "Event calendar and cultural programming guide for the Winter Garden"
+    },
+    {
+      "src": "brookfield_5.jpg",
+      "height": 823,
+      "width": 1000,
+      "alt": "Wayfinding kiosk map guiding visitors through the complex"
+    },
+    {
+      "src": "brookfield_7.jpg",
+      "height": 663,
+      "width": 1000,
+      "alt": "Luminaries seasonal art installation schedule and interactive wishing stations"
+    },
+    {
+      "src": "brookfield_6.jpg",
+      "height": 668,
+      "width": 1000,
+      "alt": "Waterfront plaza overview with North Cove Marina services"
+    },
+    {
+      "src": "brookfield_8.jpg",
+      "height": 660,
+      "width": 1000,
+      "alt": "Arts Brookfield public concerts and visual arts programming schedule"
+    },
+    {
+      "src": "brookfield_9.jpg",
+      "height": 819,
+      "width": 1000,
+      "alt": "Mobile responsive layout showing directory and event details"
+    },
+    {
+      "src": "brookfield_10.jpg",
+      "height": 671,
+      "width": 1000,
+      "alt": "Architectural photography of the glass Winter Garden atrium overlooking the Hudson River"
+    }
+  ],
+  "duties": ["Javascript Development", "CMS Frontend"],
+  "launchURL": ["http://brookfieldplaceny.com"],
+  "projectDate": 2015,
+  "client": "Brookfield Place",
+  "rank": 10
+}

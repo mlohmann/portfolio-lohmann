@@ -1,0 +1,55 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+.env*
+!.env.example
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local
+NOTES.md
+/security_best_practices_report.md
+/.codegpt/
+/supabase/*
+!/supabase/README.md
+!/supabase/storage.sql
+!/supabase/migrations/
+/scripts/*
+!/scripts/prerender.mjs
+!/scripts/test-production.mjs
+!/scripts/generate-supabase-import.mjs
+!/scripts/upload-supabase-images.mjs
+!/scripts/upload-supabase-data.mjs
+!/scripts/prepare-responsive-images.py
+!/scripts/requirements.txt
+/_project_assets
+/reports
+
+# Project and press/news images, including generated responsive variants.
+# Site assets (backgrounds, logos, fonts, and favicons) remain trackable.
+/public/screens/
+/public/press-images/
+/public/optimized/screens/
+/public/optimized/press-images/
+
+# Legacy tooling stays local; generated tooling output is disposable.
+/codegen/
+/yaml-loader.js
+/storybook-static/
+.venv/
+__pycache__/

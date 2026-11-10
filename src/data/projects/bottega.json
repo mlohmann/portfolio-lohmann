@@ -1,0 +1,57 @@
+{
+  "title": "Bottega Veneta Official Website",
+  "text": "For Bottega Veneta’s website, I contributed Flash development and animation. The site presented the brand’s collections alongside Art of Collaboration, its series of partnerships with photographers and artists. Campaign imagery led into editorial pages that explained the collaborations, giving visitors context for the photographs. Bottega Veneta’s 2010 website announcement also describes video and sound as part of its online presentation. My work was on the website’s development and animation, bringing those forms of campaign content into an interactive web setting.",
+  "summary": "I contributed Flash development and animation to Bottega Veneta’s website, presenting its collections and Art of Collaboration campaign through photography, film, and editorial content.",
+  "thumbnail": {
+    "src": "bv_thumb.jpg"
+  },
+  "preview": {
+    "src": "bv_preview.jpg",
+    "height": 1196,
+    "width": 870
+  },
+  "images": [
+    {
+      "src": "bv_1.jpg",
+      "height": 424,
+      "width": 800,
+      "alt": "Bottega Veneta Art of the Collaboration microsite homepage featuring fashion editorial campaign photography"
+    },
+    {
+      "src": "bv_2.jpg",
+      "height": 425,
+      "width": 800,
+      "alt": "Interactive photographer directory exploring seasonal visual collaborations"
+    },
+    {
+      "src": "bv_3.jpg",
+      "height": 423,
+      "width": 800,
+      "alt": "Full-screen high-resolution fashion gallery with custom transitions"
+    },
+    {
+      "src": "bv_4.jpg",
+      "height": 423,
+      "width": 800,
+      "alt": "Art of the Collaboration volume preview and behind-the-scenes video feature"
+    },
+    {
+      "src": "bv_5.jpg",
+      "height": 424,
+      "width": 800,
+      "alt": "Runway collection lookbook highlighting leather goods craftsmanship"
+    },
+    {
+      "src": "bv_6.jpg",
+      "height": 424,
+      "width": 800,
+      "alt": "Global boutique locator and luxury leather accessories catalog"
+    }
+  ],
+  "duties": ["Flash Development", "Animation"],
+  "launchURL": ["http://www.bottegaveneta.com"],
+  "active": false,
+  "projectDate": 2010,
+  "client": "Bottega Veneta",
+  "rank": 9
+}

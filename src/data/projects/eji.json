@@ -1,0 +1,63 @@
+{
+  "title": "Equal Justice Initiative",
+  "text": "The original Legacy Museum in Montgomery, Alabama, opened in 2018 to trace the connections between enslavement, racial terror, segregation, and mass incarceration. I contributed JavaScript development using React and PixiJS to its interactive exhibits. Local Projects worked with the Equal Justice Initiative to bring historical research into the exhibition through digital media, including historical data and first-person accounts. The museum occupied a site where enslaved people had once been imprisoned, placing the digital experience within a physical setting directly connected to that history.",
+  "summary": "I contributed JavaScript development using React and PixiJS to interactive exhibits at the original Legacy Museum, helping visitors explore the history of racial injustice in America.",
+  "thumbnail": {
+    "src": "eji_thumb.jpg"
+  },
+  "preview": {
+    "src": "eji_preview.jpg",
+    "height": 897,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "eji_1.png",
+      "height": 1514,
+      "width": 2690,
+      "alt": "Interactive timeline touchscreen illustrating milestones from enslavement to racial terror"
+    },
+    {
+      "src": "eji_2.png",
+      "height": 1518,
+      "width": 2690,
+      "alt": "Exhibit interface displaying historical documents, photographs, and prison records"
+    },
+    {
+      "src": "eji_4.jpg",
+      "height": 1520,
+      "width": 2694,
+      "alt": "Museum visitors interacting with multi-touch digital kiosks in the exhibition hall"
+    },
+    {
+      "src": "eji_3.png",
+      "height": 1520,
+      "width": 2692,
+      "alt": "Interactive map detailing lynching sites across the United States"
+    },
+    {
+      "src": "eji_4.png",
+      "height": 1520,
+      "width": 2694,
+      "alt": "Narrative exhibit screen presenting oral histories and documentary media"
+    },
+    {
+      "src": "eji_6.jpg",
+      "height": 1920,
+      "width": 1080,
+      "alt": "Vertical kiosk display presenting personal audio-visual testimonies"
+    },
+    {
+      "src": "eji_7.jpg",
+      "height": 1920,
+      "width": 1080,
+      "alt": "Interactive portrait gallery commemorating victims of racial terror"
+    }
+  ],
+  "duties": ["Javascript (PixiJS & React)"],
+  "active": true,
+  "projectType": "kiosk",
+  "projectDate": 2018,
+  "client": "Equal Justice Initiative",
+  "rank": 14
+}

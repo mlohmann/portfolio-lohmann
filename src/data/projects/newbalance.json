@@ -1,0 +1,75 @@
+{
+  "title": "New Balance Official Website",
+  "text": "I worked on Flash development and animation for New Balance’s corporate website. The site covered the company’s products and the people and places behind them, including American manufacturing, factory locations, and community initiatives. The site gave visitors different ways to explore the company beyond its product range.",
+  "summary": "For New Balance’s corporate website, I worked on Flash development and animation to present its products, manufacturing story, and community initiatives through interactive content.",
+  "thumbnail": {
+    "src": "newbalance_thumb.jpg"
+  },
+  "preview": {
+    "src": "newbalance_preview.jpg",
+    "height": 787,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "newbalance_1_b.jpg",
+      "height": 627,
+      "width": 700,
+      "alt": "New Balance homepage hero showcasing performance running footwear and brand heritage"
+    },
+    {
+      "src": "newbalance_1.jpg",
+      "height": 318,
+      "width": 700,
+      "alt": "Interactive footwear carousel filterable by running, training, and lifestyle categories"
+    },
+    {
+      "src": "newbalance_2.jpg",
+      "height": 418,
+      "width": 700,
+      "alt": "Detailed product view highlighting sole cushioning, upper materials, and fit widths"
+    },
+    {
+      "src": "newbalance_3.jpg",
+      "height": 566,
+      "width": 700,
+      "alt": "Athletic apparel collection for marathon training and endurance running"
+    },
+    {
+      "src": "newbalance_4.jpg",
+      "height": 562,
+      "width": 699,
+      "alt": "Store locator and personalized shoe selector guide"
+    },
+    {
+      "src": "nb365_1.jpg",
+      "height": 513,
+      "width": 717,
+      "alt": "New Balance 365 lifestyle campaign featuring everyday athletic wear"
+    },
+    {
+      "src": "nb365_2.jpg",
+      "height": 509,
+      "width": 717,
+      "alt": "NB365 interactive seasonal lookbook with clickable street outfits"
+    },
+    {
+      "src": "nb365_3.jpg",
+      "height": 511,
+      "width": 715,
+      "alt": "NB365 product detail view featuring sneaker colorways and styling suggestions"
+    },
+    {
+      "src": "nb365_4.jpg",
+      "height": 510,
+      "width": 717,
+      "alt": "NB365 campaign lookbook highlighting urban casual sneaker culture"
+    }
+  ],
+  "duties": ["Flash Development", "Animation"],
+  "launchURL": ["http://www.newbalance.com"],
+  "active": false,
+  "projectDate": 2010,
+  "client": "New Balance",
+  "rank": 13
+}

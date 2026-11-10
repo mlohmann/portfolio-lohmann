@@ -1,0 +1,105 @@
+/* Document defaults shared by the static homepage and client-rendered routes. */
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1em;
+  font-family: "Raleway", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* React reveals these wrappers when observed; static homepage content is visible immediately. */
+.scroll-animation {
+  opacity: 0;
+}
+
+[data-prerendered] .scroll-animation {
+  opacity: 1;
+}
+
+/* Native homepage controls update ARIA state instead of generating React style variants. */
+[data-prerendered] #site-navigation[aria-hidden="false"],
+[data-prerendered] #site-navigation[aria-hidden="false"] ul,
+[data-prerendered] #site-navigation[aria-hidden="false"] li {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.8s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+[data-prerendered] #site-navigation[aria-hidden="false"] li {
+  transition-duration: 1.2s;
+}
+
+/* Minimal animation primitives used by AnimatedOnScroll and project-defined keyframes. */
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+@media print, (prefers-reduced-motion: reduce) {
+  .scroll-animation {
+    opacity: 1;
+  }
+
+  .animate__animated {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+  }
+}
+
+@keyframes fadeInUpMedium {
+  from {
+    opacity: 0;
+    transform: translate3d(0, var(--entrance-distance), 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUpMedium {
+  opacity: 0;
+  animation-name: fadeInUpMedium;
+  animation-delay: var(--entrance-delay);
+}
+
+@keyframes fadeInScaleX {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.fadeInScaleX {
+  opacity: 0;
+  animation-name: fadeInScaleX;
+  animation-delay: var(--entrance-delay);
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Marc Jacobs Daisy Eau So Fresh",
+  "text": "I worked on Flash development and animation for the Daisy Eau So Fresh digital campaign. The website introduced the fragrance collection through product imagery and a floral visual theme. Its companion Facebook experience, the Eau So Fresh Finder, presented a visitor’s photos as “freshest moments.” The two parts gave the campaign different ways to connect with visitors: browsing the fragrance collection on the website and seeing personal photos inside its visual world. Both are preserved in the project’s archived screens.",
+  "summary": "My work on the Daisy Eau So Fresh campaign included Flash development and animation, bringing fragrance imagery and a Facebook photo feature into its digital presentation.",
+  "thumbnail": {
+    "src": "mj_thumb.jpg"
+  },
+  "preview": {
+    "src": "mj_preview.jpg",
+    "height": 870,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "mj_1.jpg",
+      "height": 506,
+      "width": 800,
+      "alt": "Marc Jacobs Daisy Eau So Fresh campaign microsite featuring playful flower animations"
+    },
+    {
+      "src": "mj_2.jpg",
+      "height": 505,
+      "width": 800,
+      "alt": "Interactive daisy field where clicking flowers reveals fragrance notes and videos"
+    },
+    {
+      "src": "mj_3.jpg",
+      "height": 503,
+      "width": 800,
+      "alt": "Facebook application interface for sending virtual bouquets to friends"
+    },
+    {
+      "src": "mj_4.jpg",
+      "height": 506,
+      "width": 800,
+      "alt": "Personalized daisy card creator with custom floral messages"
+    },
+    {
+      "src": "mj_5.jpg",
+      "height": 506,
+      "width": 800,
+      "alt": "Product showcase highlighting fragrance notes of raspberry, wild rose, and plum"
+    },
+    {
+      "src": "mj_6.jpg",
+      "height": 600,
+      "width": 554,
+      "alt": "Behind-the-scenes campaign film directed by Sofia Coppola"
+    }
+  ],
+  "duties": ["Flash Development", "Animation"],
+  "launchURL": ["http://www.daisymarcjacobs.com"],
+  "active": false,
+  "projectDate": 2010,
+  "client": "Marc Jacobs",
+  "rank": 6
+}

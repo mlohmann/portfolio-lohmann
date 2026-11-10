@@ -1,0 +1,51 @@
+{
+  "title": "Chuck Close Official Website",
+  "text": "I contributed Flash development to Chuck Close’s official website. Visitors could browse a collection of his work and open large images to examine individual pieces. The interface gave the artwork most of the screen, with navigation kept apart from the image. An introductory view led into the collection. This was an image-focused website for an artist whose portraits reward close looking, and the archived screens preserve how that historical version presented the work.",
+  "summary": "For Chuck Close’s official website, I contributed Flash development to an image-focused experience where visitors could browse his work and examine individual pieces at a larger scale.",
+  "preview": {
+    "src": "chuck_preview.jpg"
+  },
+  "thumbnail": {
+    "src": "chuck_thumb.jpg",
+    "height": 870,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "chuck_1.jpg",
+      "height": 692,
+      "width": 909,
+      "alt": "Chuck Close retrospective homepage featuring large-scale mosaic portrait"
+    },
+    {
+      "src": "chuck_2.jpg",
+      "height": 692,
+      "width": 907,
+      "alt": "Interactive zoom interface examining individual painted grid squares of a portrait"
+    },
+    {
+      "src": "chuck_3.jpg",
+      "height": 689,
+      "width": 908,
+      "alt": "Chronological career timeline detailing printmaking innovations and major exhibitions"
+    },
+    {
+      "src": "chuck_4.jpg",
+      "height": 694,
+      "width": 907,
+      "alt": "Artwork archive filterable by medium including oil on canvas, tapestries, and woodcuts"
+    },
+    {
+      "src": "chuck_5.jpg",
+      "height": 692,
+      "width": 908,
+      "alt": "Artist biography and studio documentary video interface"
+    }
+  ],
+  "duties": ["Flash Development"],
+  "launchURL": ["http://www.chuckclose.com"],
+  "active": false,
+  "projectDate": 2011,
+  "client": "Chuck Close",
+  "rank": 12
+}

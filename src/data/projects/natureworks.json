@@ -1,0 +1,32 @@
+{
+  "title": "Nature Works Everywhere",
+  "text": "Nature Works Everywhere connected environmental education with activities for the classroom and school grounds. I contributed JavaScript development to the website for The Nature Conservancy. The program offered lesson plans, video tours, and interviews with scientists. The archived site also presents school-garden tools organized around design, measurement, and tracking, along with examples of featured gardens. Teachers could explore learning resources and practical garden material in the same place. The project brought educational content and tools together in a web experience centered on learning from nature.",
+  "summary": "I contributed JavaScript development to Nature Works Everywhere, The Nature Conservancy’s education website, which paired classroom resources with tools for exploring school gardens.",
+  "thumbnail": {
+    "src": "nwe_thumb.jpg"
+  },
+  "preview": {
+    "src": "nwe_preview.jpg",
+    "height": 797,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "nwe_1.jpg",
+      "height": 1842,
+      "width": 1420,
+      "alt": "Nature Works Everywhere interactive conservation education platform for students"
+    },
+    {
+      "src": "nwe_2.jpg",
+      "height": 2265,
+      "width": 1420,
+      "alt": "Interactive garden calculator exploring how urban trees and soils filter water and clean air"
+    }
+  ],
+  "duties": ["Javascript Development"],
+  "launchURL": ["https://www.natureworkseverywhere.org"],
+  "projectDate": 2014,
+  "client": "The Nature Conservancy",
+  "rank": 5
+}

@@ -1,0 +1,97 @@
+{
+  "title": "Eisenhower Timeline",
+  "text": "For the Eisenhower Memorial Commission’s digital history experience, I worked on JavaScript development and the CMS frontend. An interactive timeline using Canvas connected events in Dwight D. Eisenhower’s life with national and world history. Historical photographs and video accompanied the material, while related lesson plans helped teachers use it in the classroom. The visual timeline gave visitors an overview of the collection organized by time. It was one part of a wider educational experience about Eisenhower’s military service, presidency, and the decisions that shaped both.",
+  "summary": "I contributed JavaScript and CMS frontend development to an interactive Eisenhower history experience, connecting a visual timeline with archival material and resources for educators.",
+  "thumbnail": {
+    "src": "ike_thumb.jpg"
+  },
+  "preview": {
+    "src": "ike_preview.jpg",
+    "height": 797,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "ike-timeline-1.jpg",
+      "height": 909,
+      "width": 1589,
+      "alt": "Dwight D. Eisenhower presidential timeline interactive navigation bar"
+    },
+    {
+      "src": "ike-timeline-2.jpg",
+      "height": 909,
+      "width": 1593,
+      "alt": "Historical era detail covering Eisenhower's World War II Supreme Allied Commander leadership"
+    },
+    {
+      "src": "ike-timeline-3.jpg",
+      "height": 909,
+      "width": 1584,
+      "alt": "Presidential administration overview highlighting the Interstate Highway System and Cold War policies"
+    },
+    {
+      "src": "ike-timeline-4.jpg",
+      "height": 907,
+      "width": 1592,
+      "alt": "Archival document explorer viewing letters, memos, and executive orders"
+    },
+    {
+      "src": "ike_1.jpg",
+      "height": 785,
+      "width": 1420,
+      "alt": "Eisenhower Foundation digital archive research portal"
+    },
+    {
+      "src": "ike_2.jpg",
+      "height": 785,
+      "width": 1420,
+      "alt": "Historical multimedia player streaming speeches including the 1961 Farewell Address"
+    },
+    {
+      "src": "ike_3.jpg",
+      "height": 785,
+      "width": 1420,
+      "alt": "Classroom curriculum modules and primary source analysis worksheets"
+    },
+    {
+      "src": "ike_4.jpg",
+      "height": 785,
+      "width": 1420,
+      "alt": "Oral history collection with audio interviews and transcripts"
+    },
+    {
+      "src": "ike-legacy-1.jpg",
+      "height": 908,
+      "width": 1629,
+      "alt": "Eisenhower Memorial and Legacy project overview in Washington, D.C."
+    },
+    {
+      "src": "ike-legacy-2.jpg",
+      "height": 904,
+      "width": 1642,
+      "alt": "Interactive architectural 3D rendering of the Frank Gehry designed memorial"
+    },
+    {
+      "src": "ike-legacy-3.jpg",
+      "height": 902,
+      "width": 1626,
+      "alt": "Memorial tapestries and bronze sculpture preview"
+    },
+    {
+      "src": "ike-legacy-4.jpg",
+      "height": 902,
+      "width": 1625,
+      "alt": "Visitor guide and historical context for the national monument"
+    }
+  ],
+  "duties": ["Javascript Development", "CMS Frontend"],
+  "launchURL": [
+    "https://www.eisenhowerfoundation.net",
+    "https://www.eisenhowerfoundation.net/timeline",
+    "https://www.eisenhowerfoundation.net/experience"
+  ],
+  "active": true,
+  "projectDate": 2015,
+  "client": "Eisenhower Memorial Commission",
+  "rank": 8
+}

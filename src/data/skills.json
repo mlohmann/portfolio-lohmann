@@ -1,0 +1,32 @@
+{
+  "skills": [
+    { "skill": "JavaScript" },
+    { "skill": "TypeScript" },
+    { "skill": "React" },
+    { "skill": "Redux" },
+    { "skill": "Node.js" },
+    { "skill": "Component Library Design" },
+    { "skill": "Design Systems & Theming" },
+    { "skill": "Data Visualization" },
+    { "skill": "Accessibility (WCAG) Compliance" },
+    { "skill": "Responsive Web Design" },
+    { "skill": "Deployment & Release Validation" },
+    { "skill": "Webpack" },
+    { "skill": "Jenkins" },
+    { "skill": "Git" },
+    { "skill": "Claude" },
+    { "skill": "ChatGPT/Codex" },
+    { "skill": "AI Skill Creation" },
+    { "skill": "Jest" },
+    { "skill": "Storybook" },
+    { "skill": "MongoDB" },
+    { "skill": "MySQL" },
+    { "skill": "Technical Mentoring" },
+    { "skill": "Code & Design Review" },
+    { "skill": "Technical Interviewing" },
+    { "skill": "Agile Workflows (JIRA)" },
+    { "skill": "Figma" },
+    { "skill": "Sketch" },
+    { "skill": "Adobe Creative Suite" }
+  ]
+}

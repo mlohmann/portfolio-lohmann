@@ -1,0 +1,104 @@
+{
+  "clients": [
+    {
+      "url": "http://www.aol.com",
+      "image": "aol.png",
+      "alt": "AOL"
+    },
+    {
+      "url": "http://www.bottegaveneta.com",
+      "image": "bv.png",
+      "alt": "bottega veneta"
+    },
+    {
+      "url": "http://www.calvinklein.com",
+      "image": "calvin-klein.png",
+      "alt": "calvinklein"
+    },
+    {
+      "url": "http://www.usa.canon.com/cusa/home",
+      "image": "canon.png",
+      "alt": "canon"
+    },
+    {
+      "url": "https://eji.org/",
+      "image": "eji.png",
+      "alt": "Equal Justice Initiative"
+    },
+    {
+      "url": "https://fashionforgood.com/",
+      "image": "ffg.png",
+      "alt": "fashionforgood"
+    },
+    {
+      "url": "http://google.com",
+      "image": "google-logo.png",
+      "alt": "google"
+    },
+    {
+      "url": "https://www.harvard.edu/",
+      "image": "harvard.png",
+      "alt": "harvard"
+    },
+    {
+      "url": "http://www.nyc.gov/html/film/html/home/home.shtml",
+      "image": "made-in-ny.png",
+      "alt": "made-in-ny"
+    },
+    {
+      "url": "http://www.marcjacobs.com",
+      "image": "marc-jacobs.png",
+      "alt": "marcjacobs"
+    },
+    {
+      "url": "http://www.marshallsonline.com",
+      "image": "marshalls.png",
+      "alt": "marshalls"
+    },
+    {
+      "url": "http://www.newbalance.com",
+      "image": "nb.png",
+      "alt": "newbalance"
+    },
+    {
+      "url": "http://nysci.org",
+      "image": "nysci.png",
+      "alt": "nysci"
+    },
+    {
+      "url": "http://www.ralphlauren.com",
+      "image": "polo-ralph.png",
+      "alt": "ralphlauren"
+    },
+    {
+      "url": "http://www.puma.com",
+      "image": "puma.png",
+      "alt": "puma"
+    },
+    {
+      "url": "http://www.rauschenbergfoundation.org",
+      "image": "rrf.png",
+      "alt": "rauschenbergfoundation"
+    },
+    {
+      "url": "http://www.tntdrama.com",
+      "image": "tnt.png",
+      "alt": "tntdrama"
+    },
+    {
+      "url": "http://www.tretorn.com",
+      "image": "tretorn.png",
+      "alt": "tretorn"
+    },
+    {
+      "url": "http://www.warnerbrosrecords.com",
+      "image": "wb.png",
+      "alt": "warnerbrosrecords"
+    },
+    {
+      "url": "https://xqsuperschool.org/",
+      "image": "xq.png",
+      "alt": "xqsuperschool"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Google Schemer",
+  "text": "I contributed JavaScript and Flash development to Start Scheming, a promotional site for Google Schemer. Schemer helped people discover and share things to do; the campaign gave them a photo activity to try. Visitors could upload a picture or use a webcam, align the image, and shape a mustache using control points. A style selector offered different looks. The guided editor turned Schemer’s mustache motif into a personalized portrait, keeping the campaign focused on something visitors could make themselves.",
+  "summary": "I contributed JavaScript and Flash development to Start Scheming, a Google Schemer promotional experience where visitors could create a mustache portrait from a photo.",
+  "thumbnail": {
+    "src": "schemer_thumb.jpg"
+  },
+  "preview": {
+    "src": "schemer_preview.jpg",
+    "height": 870,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "schemer_1.jpg",
+      "height": 728,
+      "width": 875,
+      "alt": "Google Schemer promotional site introducing local activity discovery"
+    },
+    {
+      "src": "schemer_2.jpg",
+      "height": 728,
+      "width": 874,
+      "alt": "Interactive feed of trending schemes, bucket list ideas, and friend recommendations"
+    },
+    {
+      "src": "schemer_3.jpg",
+      "height": 731,
+      "width": 871,
+      "alt": "Scheme detail card featuring venue details, Google Maps integration, and directions"
+    },
+    {
+      "src": "schemer_4.jpg",
+      "height": 733,
+      "width": 874,
+      "alt": "Scheme creation screen for saving and sharing custom activities with friends"
+    },
+    {
+      "src": "schemer_5.jpg",
+      "height": 733,
+      "width": 873,
+      "alt": "Mobile app preview showcasing synchronization between web and mobile devices"
+    }
+  ],
+  "duties": ["Javascript", "Flash Development"],
+  "launchURL": ["http://startscheming.appspot.com"],
+  "active": false,
+  "projectType": "website",
+  "projectDate": 2011,
+  "client": "Google",
+  "rank": 2
+}

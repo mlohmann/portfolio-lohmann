@@ -1,0 +1,32 @@
+{
+  "title": "My Motor Island Official Website",
+  "text": "My Motor Island brought Road Rippers toys into a virtual world for children. I contributed Flash development to the experience. Players encountered the brand’s vehicles in a digital setting, extending the toys beyond physical play. The project was a way to bring Toy State’s vehicle lights, sounds, and actions online. The result was a playable destination built around the Road Rippers brand.",
+  "summary": "I contributed Flash development to My Motor Island, a virtual world that brought Road Rippers toy cars into an online setting for children to explore.",
+  "thumbnail": {
+    "src": "mymotor_thumb.jpg"
+  },
+  "preview": {
+    "src": "mymotor_preview.jpg",
+    "height": 870,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "mymotor_1.jpg",
+      "height": 547,
+      "width": 950,
+      "alt": "My Motor Island virtual racing map with interactive adventure tracks"
+    },
+    {
+      "src": "mymotor_2.jpg",
+      "height": 493,
+      "width": 950,
+      "alt": "Vehicle customization garage modifying Road Rippers cars with custom decals and lights"
+    }
+  ],
+  "duties": ["Flash Development"],
+  "launchURL": ["http://www.mymotorisland.com"],
+  "active": false,
+  "client": "My Motor Island",
+  "rank": 7
+}

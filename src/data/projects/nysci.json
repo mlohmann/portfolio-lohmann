@@ -1,0 +1,75 @@
+{
+  "title": "NYSci Design Make Play",
+  "text": "For the New York Hall of Science, I contributed JavaScript development to the Design Make Play website. The initiative explored designing, making, and playing as approaches to STEM learning. Its website introduced those ideas through case studies and profiles of innovators, with material aimed at people working in education. Visitors could move from an overview of the approach to examples of it in practice. The project extended NYSCI’s educational work onto the web, giving the initiative a dedicated place for sharing its ideas and examples.",
+  "summary": "I contributed JavaScript development to NYSCI’s Design Make Play website, presenting its approach to STEM learning through case studies and resources for educators.",
+  "preview": {
+    "src": "dmp_preview.jpg"
+  },
+  "thumbnail": {
+    "src": "dmp_thumb.jpg",
+    "height": 870,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "dmp_1.jpg",
+      "height": 2719,
+      "width": 1420,
+      "alt": "New York Hall of Science Design Make Play educational framework homepage"
+    },
+    {
+      "src": "dmp_2.jpg",
+      "height": 2327,
+      "width": 1420,
+      "alt": "Interactive STEM activities directory for teachers and museum visitors"
+    },
+    {
+      "src": "dmp_3.jpg",
+      "height": 2455,
+      "width": 1420,
+      "alt": "Maker workshop project guides with step-by-step engineering challenges"
+    },
+    {
+      "src": "dmp_4.jpg",
+      "height": 2846,
+      "width": 1420,
+      "alt": "Educator professional development portal with downloadable classroom curricula"
+    },
+    {
+      "src": "scigames_1.jpg",
+      "height": 768,
+      "width": 1024,
+      "alt": "Science Playground interactive online portal illustrating core physics concepts"
+    },
+    {
+      "src": "scigames_2.jpg",
+      "height": 768,
+      "width": 1024,
+      "alt": "Kinetic motion physics simulation exploring friction, velocity, and gravity"
+    },
+    {
+      "src": "scigames_3.jpg",
+      "height": 768,
+      "width": 1024,
+      "alt": "Acoustics and frequency puzzle game experimenting with sound waves"
+    },
+    {
+      "src": "scigames_4.jpg",
+      "height": 766,
+      "width": 1024,
+      "alt": "Fluid dynamics simulation exploring water wheels and hydroelectric energy"
+    },
+    {
+      "src": "scigames_5.jpg",
+      "height": 767,
+      "width": 1024,
+      "alt": "Light reflection and optics puzzle using mirrors and prisms"
+    }
+  ],
+  "duties": ["Javascript Development"],
+  "launchURL": ["http://dmp.nysci.org"],
+  "active": false,
+  "projectDate": 2013,
+  "client": "NYSci",
+  "rank": 4
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Star in Dallas",
+  "text": "Star in Dallas put fans and their friends into a personalized version of the show’s opening credits. I contributed JavaScript development to the experience on TNT’s Dallas website. Visitors connected through Facebook, and the resulting sequence combined personal material with the format of the television introduction. By combining the Facebook and Google Maps APIs, we created personalized opening credits starring visitors’ friends, family, and hometown, turning the show’s familiar opening into something personal.",
+  "summary": "I contributed JavaScript development to TNT’s Star in Dallas experience, which turned visitors and their Facebook friends into the cast of personalized opening credits.",
+  "thumbnail": {
+    "src": "dallas_thumb.jpg"
+  },
+  "preview": {
+    "src": "dallas_preview.jpg",
+    "height": 870,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "dallas_1.jpg",
+      "height": 664,
+      "width": 899,
+      "alt": "Star in Dallas interactive trailer generator homepage on TNT"
+    },
+    {
+      "src": "dallas_3.jpg",
+      "height": 664,
+      "width": 898,
+      "alt": "Facebook Connect permission screen linking friend profiles and check-in locations"
+    },
+    {
+      "src": "dallas_2.jpg",
+      "height": 665,
+      "width": 899,
+      "alt": "Custom trailer preview integrating user friends into dramatic TV scenes"
+    },
+    {
+      "src": "dallas_4.jpg",
+      "height": 665,
+      "width": 900,
+      "alt": "Personalized video playback featuring the iconic Dallas theme song and opening credits"
+    },
+    {
+      "src": "dallas_6.jpg",
+      "height": 664,
+      "width": 899,
+      "alt": "Social sharing dialog allowing users to publish customized trailers to Facebook"
+    }
+  ],
+  "duties": ["Javascript Development"],
+  "launchURL": ["http://star_in.dallastnt.com"],
+  "active": false,
+  "projectType": "website",
+  "projectDate": 2012,
+  "client": "TNT",
+  "rank": 11
+}

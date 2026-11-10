@@ -1,0 +1,62 @@
+{
+  "title": "National Science Medals",
+  "text": "I built the site’s frontend and the interactive laureate explorer for the National Science and Technology Medals Foundation. The WebGL experience presented medal recipients in a visual timeline, with filters that let visitors narrow the collection. It gave people a way to explore scientific achievement through the people behind it, alongside the wider website’s laureate profiles and stories. The foundation’s launch letter described the timeline as part of that effort to bring laureates’ lives and contributions into public view. My frontend and explorer work helped make the collection available to the public online.",
+  "summary": "I built the site’s frontend and the interactive laureate explorer for the National Science and Technology Medals Foundation, giving visitors a visual way to explore medal recipients and their achievements.",
+  "preview": {
+    "src": "nstmf_preview.jpg",
+    "height": 797,
+    "width": 1196
+  },
+  "thumbnail": {
+    "src": "nstmf_thumb.jpg"
+  },
+  "images": [
+    {
+      "src": "nstmf_1.jpg",
+      "height": 666,
+      "width": 1000,
+      "alt": "National Science & Technology Medals Foundation homepage honoring American innovators"
+    },
+    {
+      "src": "nstmf_2.jpg",
+      "height": 1000,
+      "width": 451,
+      "alt": "Laureate directory searchable by scientific discipline, discovery, and medal year"
+    },
+    {
+      "src": "nstmf_3.jpg",
+      "height": 669,
+      "width": 1000,
+      "alt": "Laureate profile page detailing pioneering research in physics, chemistry, and computing"
+    },
+    {
+      "src": "nstmf_4.jpg",
+      "height": 668,
+      "width": 1000,
+      "alt": "Interactive timeline tracing key historical milestones in American scientific research"
+    },
+    {
+      "src": "nstmf_5.jpg",
+      "height": 669,
+      "width": 1000,
+      "alt": "Student inspiration portal connecting aspiring researchers with National Medal laureates"
+    },
+    {
+      "src": "nstmf_6.jpg",
+      "height": 671,
+      "width": 1000,
+      "alt": "Video interview archive featuring conversations with technology and science pioneers"
+    },
+    {
+      "src": "nstmf_7.jpg",
+      "height": 666,
+      "width": 1000,
+      "alt": "Foundation mission, STEM education programs, and annual awards gala overview"
+    }
+  ],
+  "duties": ["Javascript Development"],
+  "launchURL": ["http://nationalmedals.org"],
+  "projectDate": 2015,
+  "client": "National Science Medals",
+  "rank": 1
+}

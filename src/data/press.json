@@ -1,0 +1,183 @@
+{
+  "articles": [
+    {
+      "title": "EJI's New Legacy Museum",
+      "client": "Equal Justice Initiative",
+      "body": "History, despite its wrenching pain, cannot be unlived, but if faced with courage, need not be lived again.",
+      "images": ["legacy.jpg"],
+      "videos": [
+        "<iframe class=\"video\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/SMvPXAowNgk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+      ],
+      "links": [
+        {
+          "url": "https://www.nytimes.com/2018/04/25/us/lynching-memorial-alabama.html?hp&action=click&pgtype=Homepage&clickSource=image&module=photo-spot-region&region=top-news&WT.nav=top-news",
+          "title": "A Lynching Memorial Is Opening. The Country Has Never Seen Anything Like It.",
+          "source": "The New York Times"
+        },
+        {
+          "url": "https://www.washingtonpost.com/news/retropolis/wp/2018/04/24/lynch-him-new-lynching-memorial-forces-nation-confront-its-brutal-history-of-racial-terrorism/?noredirect=on&utm_term=.475dc9095c5e",
+          "title": "'Lynch him!': New lynching memorial confronts the nation’s brutal history of racial terrorism",
+          "source": "Washington Post"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/inside-the-memorial-to-victims-of-lynching-60-minutes-oprah-winfrey",
+          "title": "Inside the memorial to victims of lynching",
+          "source": "60 Minutes"
+        }
+      ],
+      "imageAlt": "Exhibition gallery and interactive touchscreen displays inside The Legacy Museum: From Enslavement to Mass Incarceration",
+      "videoDetails": [
+        {
+          "title": "EJI's New Legacy Museum Overview",
+          "audioDescription": "Archival photography and modern footage document the Legacy Museum in Montgomery, Alabama. Exhibits trace American history from chattel slavery through the era of lynching, racial segregation, and modern mass incarceration. Visitors interact with touchscreens, listen to narrated testimonies in audio booths, and view historical artifacts.",
+          "transcript": "Narration: The Legacy Museum: From Enslavement to Mass Incarceration is situated on a site where enslaved Black people were once imprisoned. The museum provides an immersive journey through American history, confronting the legacy of racial injustice through narrative text, interactive media, and personal testimony to foster dialogue, truth, and reconciliation."
+        }
+      ]
+    },
+    {
+      "title": "London Mithraeum",
+      "client": "Bloomberg",
+      "images": ["mithras.jpg"],
+      "videos": [
+        "<iframe src=\"https://player.vimeo.com/video/247024584?h=a3d1e1c16e\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+      ],
+      "links": [
+        {
+          "url": "https://www.cnn.com/2018/01/12/europe/london-temple-of-mithras/index.html",
+          "title": "Temple to ancient Roman cult resurrected beneath London",
+          "source": "CNN"
+        },
+        {
+          "url": "https://time.com/collection/worlds-greatest-places-2018/5366682/temple-of-mithras-london-uk/",
+          "title": "Greatest Places 2018",
+          "source": "Time Magazine"
+        },
+        {
+          "url": "https://www.dezeen.com/2017/11/09/london-mithraeum-roman-temple-museum-architecture-local-projects-bloomberg-london-uk/",
+          "title": "Underground Roman Temple Reopens as Immersive Museum",
+          "source": "Dezeen"
+        },
+        {
+          "url": "https://www.lonelyplanet.com/news/2017/11/22/london-mithraeum-bloomberg-roman-museum/",
+          "title": "A lost Roman temple reopens beneath London’s bustling streets",
+          "source": "Lonely Planet"
+        }
+      ],
+      "imageAlt": "Subterranean ruins of the 3rd-century Roman Temple of Mithras illuminated beneath Bloomberg London",
+      "videoDetails": [
+        {
+          "title": "London Mithraeum Exhibition",
+          "audioDescription": "Subterranean archaeological gallery beneath Bloomberg's European headquarters in London. Atmospheric mist and choreographed light projections delineate the stone pillars and altar of the Temple of Mithras, accompanied by Latin choral chanting and ritual soundscapes. Glass display cases highlight excavated Roman artifacts.",
+          "transcript": "Audio summary: Immersive soundscape featuring Latin chanting, echoes, and footsteps evokes the ritual atmosphere of the ancient Roman cult of Mithras within the excavated ruins seven meters below street level."
+        }
+      ]
+    },
+    {
+      "title": "Brookfield Place",
+      "client": "Brookfield Place",
+      "images": ["bkflpl.jpg"],
+      "videos": [
+        "<iframe src=\"https://player.vimeo.com/video/144146816?h=77230bfdf8&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+      ],
+      "links": [
+        {
+          "url": "http://www.wsj.com/articles/coming-into-its-own-the-rejuvenated-brookfield-place-1433983546",
+          "title": "Coming Into Its Own: The Rejuvenated Brookfield Place",
+          "source": "Wall Street Journal"
+        }
+      ],
+      "imageAlt": "Luminaries interactive color-shifting lantern canopy in the glass Winter Garden atrium at Brookfield Place",
+      "videoDetails": [
+        {
+          "title": "Brookfield Place Luminaries",
+          "audioDescription": "A canopy of 650 color-shifting LED lanterns suspended in the glass Winter Garden pavilion at Brookfield Place glows above glowing wishing stations. Visitors place hands on touch-sensitive consoles, launching dynamic ripples of color and light across the ceiling canopy.",
+          "transcript": "Narration & Music: An interactive holiday installation created by the LAB at Rockwell Group. Visitors send wishes from interactive consoles, triggering choreographed musical light shows that ripple across hundreds of suspended lanterns."
+        }
+      ]
+    },
+    {
+      "title": "Canon Project Imaginat10n",
+      "client": "Canon Camera",
+      "images": ["canon.jpg"],
+      "videos": [
+        "<iframe width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/OUvtoRIDahI\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+      ],
+      "links": [
+        {
+          "url": "https://variety.com/2013/digital/news/ron-howard-helps-canon-capture-creativity-with-short-film-contest-1200779452/",
+          "title": "Ron Howard Helps Canon Capture Creativity with Short Film Contest",
+          "source": "Variety"
+        }
+      ],
+      "imageAlt": "Canon Project Imaginat10n website interface and film festival gallery featuring director Ron Howard",
+      "videoDetails": [
+        {
+          "title": "Canon Project Imaginat10n Contest Overview",
+          "audioDescription": "Director Ron Howard introduces the Canon Project Imaginat10n creative festival. A montage of consumer-submitted photographs in categories such as Setting, Character, Relationship, and Mood transitions into scenes from five celebrity-directed short films produced with Canon DSLR cameras.",
+          "transcript": "Ron Howard: In Project Imagin8ion, you inspired a Hollywood film with your photos. Now with Project Imaginat10n, five celebrity directors—Eva Longoria, Jamie Foxx, Biz Stone, Georgina Chapman, and James Murphy—will each direct a short film based on ten user-submitted consumer photographs. Grab your Canon camera and submit your vision."
+        }
+      ]
+    },
+    {
+      "title": "Spotlight on Broadway",
+      "client": "Made in NYC (City of New York)",
+      "images": ["broadway.jpg"],
+      "videos": [
+        "<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/241536507?h=642dce5e13\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen></iframe>"
+      ],
+      "links": [
+        {
+          "url": "https://www.broadwayleague.com/press/press-releases/spotlight-on-broadway-launches-new-website-spotlightonbroadway/",
+          "title": "SPOTLIGHT ON BROADWAY Launches New Website",
+          "source": "Broadway League"
+        }
+      ],
+      "imageAlt": "Spotlight on Broadway interactive digital map highlighting historic theaters in Times Square",
+      "videoDetails": [
+        {
+          "title": "Spotlight on Broadway Website & Map",
+          "audioDescription": "The Spotlight on Broadway digital interactive experience displays an aerial view and 3D map of the historic Broadway theater district in Times Square. Clicking theater markers reveals historical architectural photos, documentary video profiles, and production archives.",
+          "transcript": "Narration: Spotlight on Broadway is a multimedia initiative by the City of New York Mayor's Office of Media and Entertainment and The Broadway League, honoring the rich history of Broadway's iconic theaters through interactive web mapping and documentary vignettes."
+        }
+      ]
+    },
+    {
+      "title": "PNC Christmas Price Index Gift Hunt",
+      "client": "PNC",
+      "images": ["pnc.jpg"],
+      "videos": [],
+      "links": [
+        {
+          "url": "https://www.nytimes.com/2012/12/22/business/cost-of-12-days-of-christmas-totals-107300.html",
+          "title": "Cost of ‘12 Days of Christmas’ Totals $107,300",
+          "source": "The New York Times"
+        },
+        {
+          "url": "https://thefwa.com/cases/pnc-christmas-price-index-gift-hunt",
+          "title": "PNC Christmas Price Index Gift Hunt",
+          "source": "The FWA"
+        }
+      ],
+      "imageAlt": "PNC Christmas Price Index interactive website and holiday gift hunt challenge"
+    },
+    {
+      "title": "PUMA Mongolian BBQ",
+      "client": "PUMA",
+      "images": ["puma.jpg"],
+      "videos": [],
+      "links": [
+        {
+          "url": "https://coolhunting.com/style/puma-mongolian-2/",
+          "title": "PUMA MONGOLIAN SHOE BBQ V2",
+          "source": "Cool Hunting"
+        },
+        {
+          "url": "https://adage.com/creativity/work/mongolian-shoe-bbq/5876",
+          "title": "PUMA : MONGOLIAN SHOE BBQ",
+          "source": "Ad Age"
+        }
+      ],
+      "imageAlt": "PUMA Mongolian Shoe BBQ interactive 3D shoe customizer with material selector"
+    }
+  ]
+}

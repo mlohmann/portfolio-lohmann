@@ -1,0 +1,230 @@
+{
+  "projects": [
+    {
+      "title": "Local Projects Official Website",
+      "preview": {
+        "src": "lp_preview.jpg",
+        "height": 797,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "lp_thumb.jpg"
+      },
+      "rank": 16,
+      "summary": "I built the entire frontend for Local Projects’ studio website, including templates, SCSS, and JavaScript, presenting its experience design work through project imagery and case studies.",
+      "id": "lp"
+    },
+    {
+      "title": "PUMA Official Website",
+      "preview": {
+        "src": "puma_preview.jpg",
+        "height": 787,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "puma_thumb.jpg"
+      },
+      "rank": 15,
+      "summary": "My work on PUMA’s brand website combined Flash development, animation, design, and concept work, bringing product stories and campaign content into an interactive browsing experience.",
+      "id": "puma"
+    },
+    {
+      "title": "Equal Justice Initiative",
+      "preview": {
+        "src": "eji_preview.jpg",
+        "height": 897,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "eji_thumb.jpg"
+      },
+      "rank": 14,
+      "summary": "I contributed JavaScript development using React and PixiJS to interactive exhibits at the original Legacy Museum, helping visitors explore the history of racial injustice in America.",
+      "id": "eji"
+    },
+    {
+      "title": "New Balance Official Website",
+      "preview": {
+        "src": "newbalance_preview.jpg",
+        "height": 787,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "newbalance_thumb.jpg"
+      },
+      "rank": 13,
+      "summary": "For New Balance’s corporate website, I worked on Flash development and animation to present its products, manufacturing story, and community initiatives through interactive content.",
+      "id": "newbalance"
+    },
+    {
+      "title": "Chuck Close Official Website",
+      "preview": {
+        "src": "chuck_preview.jpg"
+      },
+      "thumbnail": {
+        "src": "chuck_thumb.jpg",
+        "height": 870,
+        "width": 1196
+      },
+      "rank": 12,
+      "summary": "For Chuck Close’s official website, I contributed Flash development to an image-focused experience where visitors could browse his work and examine individual pieces at a larger scale.",
+      "id": "chuckclose"
+    },
+    {
+      "title": "Star in Dallas",
+      "preview": {
+        "src": "dallas_preview.jpg",
+        "height": 870,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "dallas_thumb.jpg"
+      },
+      "rank": 11,
+      "summary": "I contributed JavaScript development to TNT’s Star in Dallas experience, which turned visitors and their Facebook friends into the cast of personalized opening credits.",
+      "id": "dallas"
+    },
+    {
+      "title": "Brookfield Place",
+      "preview": {
+        "src": "brookfield_preview.jpg",
+        "width": 1196,
+        "height": 870
+      },
+      "thumbnail": {
+        "src": "brookfield_thumb.jpg",
+        "height": 870,
+        "width": 1196
+      },
+      "rank": 10,
+      "summary": "For Brookfield Place’s website, I worked on JavaScript and the CMS frontend, bringing shopping, dining, events, and visitor information together for the Lower Manhattan destination.",
+      "id": "brookfield"
+    },
+    {
+      "title": "Bottega Veneta Official Website",
+      "preview": {
+        "src": "bv_preview.jpg",
+        "height": 1196,
+        "width": 870
+      },
+      "thumbnail": {
+        "src": "bv_thumb.jpg"
+      },
+      "rank": 9,
+      "summary": "I contributed Flash development and animation to Bottega Veneta’s website, presenting its collections and Art of Collaboration campaign through photography, film, and editorial content.",
+      "id": "bottega"
+    },
+    {
+      "title": "Eisenhower Timeline",
+      "preview": {
+        "src": "ike_preview.jpg",
+        "height": 797,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "ike_thumb.jpg"
+      },
+      "rank": 8,
+      "summary": "I contributed JavaScript and CMS frontend development to an interactive Eisenhower history experience, connecting a visual timeline with archival material and resources for educators.",
+      "id": "eisenhower"
+    },
+    {
+      "title": "My Motor Island Official Website",
+      "preview": {
+        "src": "mymotor_preview.jpg",
+        "height": 870,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "mymotor_thumb.jpg"
+      },
+      "rank": 7,
+      "summary": "I contributed Flash development to My Motor Island, a virtual world that brought Road Rippers toy cars into an online setting for children to explore.",
+      "id": "mymotorisland"
+    },
+    {
+      "title": "Marc Jacobs Daisy Eau So Fresh",
+      "preview": {
+        "src": "mj_preview.jpg",
+        "height": 870,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "mj_thumb.jpg"
+      },
+      "rank": 6,
+      "summary": "My work on the Daisy Eau So Fresh campaign included Flash development and animation, bringing fragrance imagery and a Facebook photo feature into its digital presentation.",
+      "id": "marcjacobs"
+    },
+    {
+      "title": "Nature Works Everywhere",
+      "preview": {
+        "src": "nwe_preview.jpg",
+        "height": 797,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "nwe_thumb.jpg"
+      },
+      "rank": 5,
+      "summary": "I contributed JavaScript development to Nature Works Everywhere, The Nature Conservancy’s education website, which paired classroom resources with tools for exploring school gardens.",
+      "id": "natureworks"
+    },
+    {
+      "title": "NYSci Design Make Play",
+      "preview": {
+        "src": "dmp_preview.jpg"
+      },
+      "thumbnail": {
+        "src": "dmp_thumb.jpg",
+        "height": 870,
+        "width": 1196
+      },
+      "rank": 4,
+      "summary": "I contributed JavaScript development to NYSCI’s Design Make Play website, presenting its approach to STEM learning through case studies and resources for educators.",
+      "id": "nysci"
+    },
+    {
+      "title": "PNC XMas Price Index",
+      "preview": {
+        "src": "pnc_preview.jpg"
+      },
+      "thumbnail": {
+        "src": "pnc_thumb.jpg",
+        "height": 870,
+        "width": 1196
+      },
+      "rank": 3,
+      "summary": "I developed JavaScript for the data display in PNC’s Christmas Price Index experience, presenting historical gift prices alongside an award-winning global gift hunt.",
+      "id": "pnc"
+    },
+    {
+      "title": "Google Schemer",
+      "preview": {
+        "src": "schemer_preview.jpg",
+        "height": 870,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "schemer_thumb.jpg"
+      },
+      "rank": 2,
+      "summary": "I contributed JavaScript and Flash development to Start Scheming, a Google Schemer promotional experience where visitors could create a mustache portrait from a photo.",
+      "id": "schemer"
+    },
+    {
+      "title": "National Science Medals",
+      "preview": {
+        "src": "nstmf_preview.jpg",
+        "height": 797,
+        "width": 1196
+      },
+      "thumbnail": {
+        "src": "nstmf_thumb.jpg"
+      },
+      "rank": 1,
+      "summary": "I built the site’s frontend and the interactive laureate explorer for the National Science and Technology Medals Foundation, giving visitors a visual way to explore medal recipients and their achievements.",
+      "id": "sciencemedals"
+    }
+  ]
+}

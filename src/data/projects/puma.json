@@ -1,0 +1,111 @@
+{
+  "title": "PUMA Official Website",
+  "text": "My work on PUMA’s brand website combined Flash development and animation with design and concept work. Campaign content and product stories sat within a visual interface that reflected the brand’s sport and lifestyle focus. The archived version includes featured campaigns, product imagery, and downloadable wallpapers, with navigation between different areas of the site. This was a Flash-based version of PUMA.com, where motion and interactive presentation were part of the browsing experience. My contribution covered both development and creative work on that historical site.",
+  "summary": "My work on PUMA’s brand website combined Flash development, animation, design, and concept work, bringing product stories and campaign content into an interactive browsing experience.",
+  "thumbnail": {
+    "src": "puma_thumb.jpg"
+  },
+  "preview": {
+    "src": "puma_preview.jpg",
+    "height": 787,
+    "width": 1196
+  },
+  "images": [
+    {
+      "src": "puma1.jpg",
+      "height": 452,
+      "width": 700,
+      "alt": "PUMA homepage featuring full-screen athletic video campaign and navigation"
+    },
+    {
+      "src": "puma2.jpg",
+      "height": 447,
+      "width": 700,
+      "alt": "PUMA footwear catalog view with interactive filters and seasonal releases"
+    },
+    {
+      "src": "mbbq1.jpg",
+      "height": 474,
+      "width": 700,
+      "alt": "PUMA Mongolian Shoe BBQ customizer showing base sneaker model in 3D perspective"
+    },
+    {
+      "src": "mbbq2.jpg",
+      "height": 486,
+      "width": 700,
+      "alt": "Shoe customization palette with material selection including suede, leather, and mesh"
+    },
+    {
+      "src": "mbbq3.jpg",
+      "height": 455,
+      "width": 700,
+      "alt": "Completed custom sneaker design preview with ordering interface"
+    },
+    {
+      "src": "PUMA_Golf_Bling01.jpg",
+      "height": 403,
+      "width": 700,
+      "alt": "PUMA Golf interactive lifestyle feature highlighting tour apparel"
+    },
+    {
+      "src": "PUMA_Golf_Bling03.jpg",
+      "height": 403,
+      "width": 700,
+      "alt": "PUMA Golf product detail showcase with technical performance specifications"
+    },
+    {
+      "src": "moto1.jpg",
+      "height": 467,
+      "width": 700,
+      "alt": "PUMA Motorsport racing collection featuring motorsport-inspired apparel and footwear"
+    },
+    {
+      "src": "pumarunning1.jpg",
+      "height": 397,
+      "width": 700,
+      "alt": "PUMA Running interactive campaign showcasing running shoe cushioning technology"
+    },
+    {
+      "src": "train1.jpg",
+      "height": 550,
+      "width": 800,
+      "alt": "PUMA Training athletic apparel showcase featuring workout gear"
+    },
+    {
+      "src": "train2.jpg",
+      "height": 550,
+      "width": 800,
+      "alt": "PUMA Training product grid with interactive performance features"
+    },
+    {
+      "src": "puma_women_1.jpg",
+      "height": 640,
+      "width": 930,
+      "alt": "PUMA Women editorial campaign featuring lifestyle and fitness collections"
+    },
+    {
+      "src": "um1.jpg",
+      "height": 474,
+      "width": 700,
+      "alt": "PUMA Urban Mobility collection showcasing commuter bags and travel accessories"
+    },
+    {
+      "src": "UM_SS07_Bike_02.jpg",
+      "height": 654,
+      "width": 936,
+      "alt": "PUMA Urban Mobility folding commuter bicycle and integrated carrier design"
+    },
+    {
+      "src": "wanders1.jpg",
+      "height": 474,
+      "width": 700,
+      "alt": "PUMA collaboration showcase with Dutch product designer Marcel Wanders"
+    }
+  ],
+  "active": false,
+  "launchURL": ["http://puma.com"],
+  "duties": ["Flash Development", "Design", "Concepting", "Animation"],
+  "projectDate": 2005,
+  "client": "PUMA",
+  "rank": 15
+}
