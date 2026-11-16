@@ -42,7 +42,7 @@ The Lohmann Design System is a **Minimalist Design Engineering Portfolio System*
 - **Asymmetric Tension**: Bold serif headlines counterbalanced against geometric condensed sans-serif navigation, anchored by ample whitespace and strict grid boundaries.
 - **Content as Hero**: Typography and project imagery carry the interface without ornamental gradients, faux skeuomorphism, or unnecessary chrome.
 - **Monochrome Foundation + Imperial Accent**: A deliberate, high-contrast monochrome canvas (`#000000` / `#ffffff`) punctuated with an authoritative flash of **Imperial Red** (`#e63746`).
-- **Zero Magic Numbers**: All dimensions, scales, margins, timings, and z-indexes flow deterministically from centralized tokens in [`src/style/`](file:///Users/Temp/Documents/Projects/Portfolio/portfolio-lohmann/src/style).
+- **Zero Magic Numbers**: All dimensions, scales, margins, timings, and z-indexes flow deterministically from centralized tokens in [`src/style/`](./src/style).
 
 ---
 
@@ -69,16 +69,16 @@ The design token system is tiered into three levels:
 └────────────────────────────────────────────────────────┘
 ```
 
-All tokens are organized in [`src/style/`](file:///Users/Temp/Documents/Projects/Portfolio/portfolio-lohmann/src/style):
+All tokens are organized in [`src/style/`](./src/style):
 
 | Module | Source File | Description |
 | :--- | :--- | :--- |
-| **Colors** | [`src/style/colors.ts`](file:///Users/Temp/Documents/Projects/Portfolio/portfolio-lohmann/src/style/colors.ts) | Brand palette, semantic surface, text, and state tokens |
-| **Sizes & Grid** | [`src/style/sizes.ts`](file:///Users/Temp/Documents/Projects/Portfolio/portfolio-lohmann/src/style/sizes.ts) | 8pt spacing scale, breakpoints, responsive column metrics, z-index |
-| **Typography** | [`src/style/typography.ts`](file:///Users/Temp/Documents/Projects/Portfolio/portfolio-lohmann/src/style/typography.ts) | Font families, typographic scale (h1–h6, p, small), line heights |
-| **Effects** | [`src/style/effects.ts`](file:///Users/Temp/Documents/Projects/Portfolio/portfolio-lohmann/src/style/effects.ts) | Focus outlines, high-contrast states, animated underline micro-interactions |
-| **Animation** | [`src/style/animation.ts`](file:///Users/Temp/Documents/Projects/Portfolio/portfolio-lohmann/src/style/animation.ts) | Transition timings, cubic-bezier curves, entrance offsets |
-| **Global** | [`src/style/global.ts`](file:///Users/Temp/Documents/Projects/Portfolio/portfolio-lohmann/src/style/global.ts) | Global reset, box-sizing, text-wrap balancing, document canvas |
+| **Colors** | [`src/style/colors.ts`](./src/style/colors.ts) | Brand palette, semantic surface, text, and state tokens |
+| **Sizes & Grid** | [`src/style/sizes.ts`](./src/style/sizes.ts) | 8pt spacing scale, breakpoints, responsive column metrics, z-index |
+| **Typography** | [`src/style/typography.ts`](./src/style/typography.ts) | Font families, typographic scale (h1–h6, p, small), line heights |
+| **Effects** | [`src/style/effects.ts`](./src/style/effects.ts) | Focus outlines, high-contrast states, animated underline micro-interactions |
+| **Animation** | [`src/style/animation.ts`](./src/style/animation.ts) | Transition timings, cubic-bezier curves, entrance offsets |
+| **Global** | [`src/style/global.ts`](./src/style/global.ts) | Global reset, box-sizing, text-wrap balancing, document canvas |
 
 ---
 
@@ -134,7 +134,7 @@ To align with modern web engineering and design-tool interoperability (Figma, De
 
 ### Typeface Trio & Roles
 
-The system uses three self-hosted, subsetted webfonts configured in [`src/fonts.css`](file:///Users/Temp/Documents/Projects/Portfolio/portfolio-lohmann/src/fonts.css):
+The system uses three self-hosted, subsetted webfonts configured in [`src/fonts.css`](./src/fonts.css):
 
 ```
                    ┌───────────────────────────────────────────────┐

@@ -11,6 +11,10 @@ const StyledLazyImage = styled.img<{ $loaded: boolean }>`
   height: auto;
   color: ${colors.textPrimary};
   opacity: ${({ $loaded }) => ($loaded ? "1" : "0")};
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 `;
 
 export default StyledLazyImage;

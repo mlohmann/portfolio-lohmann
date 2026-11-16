@@ -262,10 +262,11 @@ const Project = () => {
   ) : null;
 
   if (error || projectError) {
-    const isNotFound =
-      error instanceof Error &&
-      error.message.includes("JSON data file not found");
-    if (isNotFound) {
+    const isNotFound = (err: unknown) =>
+      err instanceof Error &&
+      (err.message.includes("JSON data file not found") ||
+        err.message.includes("Published CMS entry not found"));
+    if (isNotFound(error) || isNotFound(projectError)) {
       return <Error404 />;
     }
     return (

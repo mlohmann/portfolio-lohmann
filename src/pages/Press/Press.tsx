@@ -23,6 +23,27 @@ import PressTitle from "./PressTitle";
 import VideoContainer from "./VideoContainer";
 import { ErrorDisplay } from "@/components/ErrorDisplay";
 import Seo from "@/seo";
+import styled from "styled-components";
+import { colors, effects, sizes, typography } from "@/style";
+
+/** Visible, keyboard-accessible collapsible details for video transcript and description. */
+const TranscriptDetails = styled.details`
+  margin-top: ${sizes.spacing.sm}px;
+  color: ${colors.textPrimary};
+
+  summary {
+    cursor: pointer;
+    font-size: ${typography.sizing.small};
+    color: ${colors.fadedWhite};
+    user-select: none;
+    padding: 4px 0;
+    ${effects.focus}
+
+    &:hover {
+      color: ${colors.highlight};
+    }
+  }
+`;
 
 /** External article destination and publication label for a press entry. */
 type SiteLink = {
@@ -185,18 +206,22 @@ const Press = () => {
                     />
                   </VideoContainer>
                   {detail?.audioDescription && (
-                    <VisuallyHidden as="div">
-                      <AdditionalInfo as="h4">Video description</AdditionalInfo>
-                      <Paragraph>{detail.audioDescription}</Paragraph>
-                    </VisuallyHidden>
+                    <TranscriptDetails>
+                      <summary>Video description</summary>
+                      <Paragraph style={{ marginTop: "0.5rem" }}>
+                        {detail.audioDescription}
+                      </Paragraph>
+                    </TranscriptDetails>
                   )}
                   {detail?.transcript && (
-                    <VisuallyHidden as="div">
-                      <AdditionalInfo as="h4">Transcript</AdditionalInfo>
-                      <Paragraph style={{ whiteSpace: "pre-line" }}>
+                    <TranscriptDetails>
+                      <summary>Transcript</summary>
+                      <Paragraph
+                        style={{ whiteSpace: "pre-line", marginTop: "0.5rem" }}
+                      >
                         {detail.transcript}
                       </Paragraph>
-                    </VisuallyHidden>
+                    </TranscriptDetails>
                   )}
                   {idx < videos.length - 1 && <Spacer size="md" />}
                 </Fragment>
