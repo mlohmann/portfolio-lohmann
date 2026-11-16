@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { colors, animation } from "@/style";
+
+import { colors, animation, effects } from "@/style";
 
 /** Shared focusable link styling for footer social destinations. */
 const FooterLink = styled.a`
@@ -15,6 +16,8 @@ const FooterLink = styled.a`
     border-color: transparent;
     box-shadow: ${colors.white} 0 0 0 4px;
   }
+
+  ${effects.forcedColorsFocus}
 `;
 
 export { FooterLink };

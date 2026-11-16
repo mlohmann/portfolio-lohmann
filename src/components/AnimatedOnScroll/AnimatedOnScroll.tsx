@@ -1,8 +1,10 @@
-import { ReactNode, useEffect, useRef, useState } from "react";
+import type { ReactNode } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Props = {
   children: ReactNode;
   animationIn: string;
+  delay?: number;
 };
 
 /**
@@ -14,14 +16,17 @@ type Props = {
  * @param props - Content and the project-defined entrance keyframe name.
  * @param props.children - Content to reveal.
  * @param props.animationIn - Keyframe class applied when the content enters view. */
-const AnimatedOnScroll = ({ children, animationIn }: Props) => {
+const AnimatedOnScroll = ({ children, animationIn, delay }: Props) => {
   const elementRef = useRef<HTMLDivElement>(null);
   // Keep the initial render stable during SSR; static-homepage CSS reveals this content.
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     if (visible || !elementRef.current) return;
-    if (typeof IntersectionObserver === "undefined") {
+    const prefersReducedMotion =
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+    if (typeof IntersectionObserver === "undefined" || prefersReducedMotion) {
       const frame = requestAnimationFrame(() => setVisible(true));
       return () => cancelAnimationFrame(frame);
     }
@@ -43,6 +48,7 @@ const AnimatedOnScroll = ({ children, animationIn }: Props) => {
   return (
     <div
       ref={elementRef}
+      style={delay === undefined ? undefined : { animationDelay: `${delay}s` }}
       className={`scroll-animation${
         visible
           ? ` animate__animated ${animationIn} animate__${animationIn}`

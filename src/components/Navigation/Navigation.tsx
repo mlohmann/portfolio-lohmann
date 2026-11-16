@@ -1,4 +1,11 @@
-import { useRef, useCallback, useEffect } from "react";
+import {
+  useRef,
+  useCallback,
+  useEffect,
+  type MouseEvent as ReactMouseEvent,
+} from "react";
+import { useRouterState } from "@tanstack/react-router";
+
 import { NavLink, MobileTitleText } from "./NavigationTypography";
 import { HamburgerSVG } from "@/icons";
 import HamburgerWrapper from "./HamburgerWrapper";
@@ -8,7 +15,7 @@ import NavigationFull from "./NavigationFull";
 import NavWrapper from "./NavWrapper";
 import NavList from "./NavList";
 import NavItem from "./NavItem";
-import { HideDesktop } from "@/components/layout";
+import { HideDesktop } from "../layout";
 import { MobileTitle } from "./MobileTitle";
 import { useAppStoreContext } from "@/hooks/useAppStoreContext";
 
@@ -19,9 +26,21 @@ const NAV_LINKS = [
   { to: "/press", display: "Press" },
 ] as const;
 
+/** Checks if a click is an unmodified left click that initiates in-app navigation. */
+const isPlainLeftClick = (event: ReactMouseEvent): boolean =>
+  !event.defaultPrevented &&
+  event.button === 0 &&
+  !event.metaKey &&
+  !event.ctrlKey &&
+  !event.shiftKey &&
+  !event.altKey;
+
 /** Provides the responsive navigation dialog and its menu trigger. */
 const Navigation = () => {
   const { setShowMenu, showmenu } = useAppStoreContext();
+  const pathname = useRouterState({
+    select: (state) => state.location.pathname,
+  });
   const menuRef = useRef<HTMLDivElement>(null);
   const openButtonRef = useRef<HTMLButtonElement>(null);
   // Initial closed state must not steal focus; only a previously open menu restores it.
@@ -36,12 +55,27 @@ const Navigation = () => {
     [setShowMenu],
   );
 
+  const handleMenuClose = useCallback(() => {
+    handleMenuToggle(false);
+  }, [handleMenuToggle]);
+
+  const handleNavLinkClick = useCallback(
+    (event: ReactMouseEvent<HTMLAnchorElement>) => {
+      const targetPath = event.currentTarget.getAttribute("href");
+      isNavigatingRef.current =
+        pathname !== targetPath && isPlainLeftClick(event);
+      handleMenuToggle(false);
+    },
+    [pathname, handleMenuToggle],
+  );
+
   const handleClickOutside = useCallback(
     (event: MouseEvent) => {
       if (
         showmenu &&
         menuRef.current &&
-        !menuRef.current.contains(event.target as Node)
+        !menuRef.current.contains(event.target as Node) &&
+        !openButtonRef.current?.contains(event.target as Node)
       ) {
         handleMenuToggle(false);
       }
@@ -116,16 +150,12 @@ const Navigation = () => {
         <NavWrapper>
           <NavList showmenu={showmenu}>
             {NAV_LINKS.map(({ to, display }, idx) => (
-              <NavItem
-                showmenu={showmenu}
-                key={display}
-                index={idx}
-                onClick={() => {
-                  isNavigatingRef.current = true;
-                  handleMenuToggle(false);
-                }}
-              >
-                <NavLink to={to} activeProps={{ "data-active": true }}>
+              <NavItem showmenu={showmenu} key={display} index={idx}>
+                <NavLink
+                  to={to}
+                  activeProps={{ "data-active": true }}
+                  onClick={handleNavLinkClick}
+                >
                   <span>{display}</span>
                 </NavLink>
               </NavItem>
@@ -133,7 +163,7 @@ const Navigation = () => {
           </NavList>
         </NavWrapper>
         <MenuCloseX
-          onClick={() => handleMenuToggle(false)}
+          onClick={handleMenuClose}
           ref={closeButtonRef}
           aria-label="Close menu"
         />
@@ -143,9 +173,11 @@ const Navigation = () => {
         <Hamburger
           ref={openButtonRef}
           aria-controls="site-navigation"
-          onClick={() => handleMenuToggle(true)}
-          aria-label="Open menu"
+          onClick={() => handleMenuToggle(!showmenu)}
+          aria-label={showmenu ? "Close menu" : "Open menu"}
           aria-expanded={showmenu}
+          tabIndex={showmenu ? -1 : undefined}
+          aria-hidden={showmenu ? true : undefined}
         >
           <HamburgerSVG aria-hidden="true" focusable="false" />
         </Hamburger>

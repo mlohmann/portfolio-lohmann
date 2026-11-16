@@ -1,5 +1,7 @@
 import styled, { css, keyframes } from "styled-components";
-import { Direction } from "@/types";
+
+import type { Direction } from "@/types";
+import { animation } from "@/style";
 
 /** Builds entrance keyframes that slide a project preview in from its viewport edge. */
 const fadeInAnimation = (translateX: string) => keyframes`
@@ -14,16 +16,21 @@ const fadeInAnimation = (translateX: string) => keyframes`
 `;
 
 /** Animated entry surface for the previous/next project preview. */
-const ArrowWrapper = styled.div<Direction>`
-  ${({ direction }) => {
+const ArrowWrapper = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "direction",
+})<Direction & { $active: boolean }>`
+  opacity: 1;
+
+  ${({ direction, $active }) => {
+    if ($active) return;
     const translateX = direction === "next" ? "100%" : "-100%";
     return css`
-      animation: ${fadeInAnimation(translateX)} ease-in 0.4s;
+      @media (prefers-reduced-motion: no-preference) {
+        animation: ${fadeInAnimation(translateX)} ${animation.normal} ease-in 3s
+          both;
+      }
     `;
   }};
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
 `;
 
 export default ArrowWrapper;

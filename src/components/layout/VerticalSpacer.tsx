@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { colors, sizes } from "@/style";
 
 /** Small inline divider used between adjacent call-to-action links. */

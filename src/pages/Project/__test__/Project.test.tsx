@@ -14,4 +14,11 @@ describe("Project", () => {
       }),
     ).toBeTruthy();
   });
+
+  it("omits the address section when a project has no launch URL", async () => {
+    renderRoute("/portfolio/project/eji");
+    await screen.findByRole("heading", { name: "Equal Justice Initiative" });
+    expect(screen.queryByRole("heading", { name: "Address" })).toBeNull();
+    expect(screen.getByText("on site kiosk")).toBeTruthy();
+  });
 });

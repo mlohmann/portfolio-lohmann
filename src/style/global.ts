@@ -7,6 +7,7 @@ import animation from "./animation";
 /** Global reset, document defaults, and shared lazy-image placeholders. */
 const GlobalStyle = createGlobalStyle`
     :root {
+        color-scheme: dark;
         --entrance-distance: ${animation.entranceDistance};
         --entrance-delay: ${animation.delay}s;
     }
@@ -27,6 +28,19 @@ const GlobalStyle = createGlobalStyle`
         position: relative;
         margin: 0; 
         padding: 0; 
+    }
+    :focus-visible {
+        outline: 2px solid ${colors.highlight};
+        outline-offset: 4px;
+    }
+    :focus:not(:focus-visible) {
+        outline: none;
+    }
+    @media (forced-colors: active) {
+        :focus-visible {
+            outline: 2px solid Highlight;
+            outline-offset: 4px;
+        }
     }
 `;
 

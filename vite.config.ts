@@ -56,6 +56,10 @@ export default defineConfig(({ mode }) => {
       open: true,
       host: true,
     },
+    preview: {
+      port: 3000,
+      host: true,
+    },
     build: {
       outDir: "dist",
       sourcemap: process.env.NODE_ENV === "development",

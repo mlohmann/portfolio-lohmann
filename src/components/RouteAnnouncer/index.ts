@@ -1,2 +1,4 @@
 /** Public exports for the RouteAnnouncer component. */
-export * from "./RouteAnnouncer";
+export { RouteAnnouncer, RouteFocusHandler } from "./RouteAnnouncer";
+
+export { announceRoute } from "./RouteAnnouncer";

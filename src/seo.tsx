@@ -1,12 +1,13 @@
 import { useEffect } from "react";
-import config from "@/data/config";
+
+import config from "./data/config";
 
 /** Canonical origin shared by runtime metadata and homepage prerendering. */
-export const SITE_URL = "https://mattlohmann.com";
+const SITE_URL = "https://mattlohmann.com";
 /** Site name appended to route-specific document titles. */
-export const SITE_NAME = "Matt Lohmann";
+const SITE_NAME = "Matt Lohmann";
 /** Default description used when a route does not provide its own summary. */
-export const DEFAULT_DESCRIPTION =
+const DEFAULT_DESCRIPTION =
   "Matt Lohmann is a Senior Frontend Engineer specializing in interactive websites and digital experiences.";
 
 /** Route metadata overrides; paths are relative to the canonical site origin. */
@@ -110,3 +111,5 @@ const Seo = ({
 };
 
 export default Seo;
+
+export { SITE_URL, SITE_NAME, DEFAULT_DESCRIPTION };

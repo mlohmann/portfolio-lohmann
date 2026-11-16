@@ -1,10 +1,7 @@
-import {
-  createMemoryHistory,
-  createRouter,
-  RouterProvider,
-} from "@tanstack/react-router";
+import { createMemoryHistory, createRouter, RouterProvider } from "@tanstack/react-router";
 import { renderToString } from "react-dom/server";
 import { ServerStyleSheet } from "styled-components";
+
 import { routeTree } from "./RouteTree";
 import config from "./data/config";
 import { DEFAULT_DESCRIPTION, SITE_NAME, SITE_URL } from "./seo";

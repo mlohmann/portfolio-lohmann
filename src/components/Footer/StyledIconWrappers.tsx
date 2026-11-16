@@ -1,8 +1,11 @@
 import styled from "styled-components";
+
 import { sizes } from "@/style";
 
 /** Unstyled horizontal list for social media icon links. */
-const StyledIconWrappers = styled.ul`
+const StyledIconWrappers = styled.ul.attrs({
+  role: "list",
+})`
   display: flex;
   list-style-type: none;
   padding: 0;

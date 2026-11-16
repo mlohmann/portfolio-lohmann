@@ -1,5 +1,6 @@
-import { sizes } from "@/style";
 import styled from "styled-components";
+
+import { sizes } from "@/style";
 import BreakpointWidths from "./BreakpointWidths";
 
 /** Page-level container reserving vertical space for the fixed site footer. */

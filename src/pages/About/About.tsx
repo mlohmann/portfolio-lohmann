@@ -1,4 +1,5 @@
-import { ContentWrapper, HideDesktop, Loading, Spacer } from "../../components";
+import { ContentWrapper, HideDesktop, Loading, Spacer } from "@/components";
+import { ErrorDisplay } from "@/components/ErrorDisplay";
 import Bio from "./Bio";
 import Clients from "./Clients";
 import Intro from "./Intro";
@@ -16,6 +17,7 @@ const About = () => {
   const clients = useContent("clients");
   const bio = useContent("bio");
   const pending = [work, skills, clients, bio].some((query) => query.isLoading);
+  const failed = [work, skills, clients, bio].find((query) => query.error)?.error;
 
   return (
     <>
@@ -36,6 +38,8 @@ const About = () => {
         <Spacer />
         {pending ? (
           <Loading />
+        ) : failed ? (
+          <ErrorDisplay>{failed.toString()}</ErrorDisplay>
         ) : (
           <>
             <Work />

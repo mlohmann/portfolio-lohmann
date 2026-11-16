@@ -3,7 +3,8 @@
  * components. */
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { Loading, ErrorDisplay, RouteAnnouncer, Footer } from "@/components";
+
+import { Loading, ErrorDisplay, RouteAnnouncer, Footer } from "../components";
 import { renderRoute } from "./TestWrapper";
 
 describe("Accessibility enhancements", () => {

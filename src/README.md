@@ -1,5 +1,7 @@
 # Source documentation conventions
 
+Coding style rules live in [AGENTS.md](AGENTS.md).
+
 Use concise, complete sentences and the same comment formatting throughout this
 folder. Document behavior at its declaration and explain non-obvious decisions
 next to the code that implements them.

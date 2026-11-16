@@ -1,5 +1,5 @@
 import { colors } from "@/style";
-import { FooterType } from "./Footer";
+import type { FooterType } from "./Footer";
 import { FooterLink } from "./FooterLink";
 
 /** Render a named external social link with its decorative brand icon. */

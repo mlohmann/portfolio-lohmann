@@ -2,7 +2,9 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "@tanstack/react-router";
+
 import router from "./router";
+import { colors } from "./style";
 
 // Fail early when the HTML entry point does not provide the expected mount node.
 const rootElement = document.getElementById("root");
@@ -19,7 +21,7 @@ ReactDOM.createRoot(rootElement).render(app);
 
 console.log(
   "%cThanks for checking my site. Hit me up on LinkedIn",
-  "padding:30px;color:hsla(355, 78%, 56%, 1);background-color:black;font-size:40px;",
+  `padding:30px;color:${colors.highlight};background-color:${colors.black};font-size:40px;`,
 );
 
 export default router;

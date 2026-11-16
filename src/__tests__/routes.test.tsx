@@ -1,13 +1,9 @@
 /** Route coverage for direct project entry and unmatched-path handling. */
 import { render, screen } from "@testing-library/react";
-import {
-  createMemoryHistory,
-  createRouter,
-  RouterProvider,
-} from "@tanstack/react-router";
+import { createMemoryHistory, createRouter, RouterProvider } from "@tanstack/react-router";
 import { describe, expect, it } from "vitest";
 
-import { routeTree } from "@/RouteTree";
+import { routeTree } from "../RouteTree";
 
 /**
  * Renders a route with isolated memory history while retaining

@@ -9,6 +9,7 @@
  * @returns A URL suitable for an image source.
  * @throws If a Storage reference is malformed or Supabase is not configured. */
 export function imageUrl(source: string, localDirectory: string): string {
+  if (!source) return "";
   if (source.startsWith("storage://")) {
     const base = import.meta.env.NEXT_PUBLIC_SUPABASE_URL;
     if (!base) throw new Error("Supabase URL is required for Storage images");

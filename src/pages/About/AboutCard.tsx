@@ -9,15 +9,22 @@ type AboutCardProps = LayoutType & {
   title: string;
   /** Supporting description beneath the heading. */
   text: string;
+  years?: string;
 };
 
 /** Display one timeline entry and orient its marker for the selected layout. */
-const AboutCard = ({ title, text, displayLayout }: AboutCardProps) => (
+const AboutCard = ({ title, text, years, displayLayout }: AboutCardProps) => (
   <>
     <AboutCardWrapper displayLayout={displayLayout}>
       <H5 as="h3">{title}</H5>
       <Spacer size="sm" />
       <AboutCardParagraph>{text}</AboutCardParagraph>
+      {years && (
+        <>
+          <Spacer size="sm" />
+          <AboutCardParagraph>{years}</AboutCardParagraph>
+        </>
+      )}
     </AboutCardWrapper>
     <AboutDot displayLayout={displayLayout} />
   </>

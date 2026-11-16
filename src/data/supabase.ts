@@ -3,7 +3,7 @@ const supabasePublishableKey = import.meta.env
   .NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
 /** True when both public CMS connection values are available at build time. */
-export const isSupabaseConfigured = Boolean(
+const isSupabaseConfigured = Boolean(
   supabaseUrl && supabasePublishableKey,
 );
 
@@ -89,7 +89,7 @@ function project(row: Row) {
  * @param slug - Project identifier for a detail request; ignored for collections.
  * @returns Normalized data for a collection or the requested project.
  * @throws When CMS configuration, collection name, HTTP response, or record is invalid. */
-export async function fetchSupabaseContent<T>(
+async function fetchSupabaseContent<T>(
   collection: string,
   slug: string,
 ): Promise<T> {
@@ -164,3 +164,5 @@ export async function fetchSupabaseContent<T>(
   });
   return { [config.key]: content } as T;
 }
+
+export { isSupabaseConfigured, fetchSupabaseContent };

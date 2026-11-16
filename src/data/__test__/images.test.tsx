@@ -1,5 +1,6 @@
 /** Verifies local, external, and Storage image reference resolution. */
 import { afterEach, expect, it, vi } from "vitest";
+
 import { imageUrl } from "../images";
 
 afterEach(() => vi.unstubAllEnvs());

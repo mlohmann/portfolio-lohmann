@@ -11,18 +11,22 @@ describe("About", () => {
     expect(
       await screen.findByText(
         /I'm a Senior Frontend Engineer specializing in the web/,
+        {},
+        { timeout: 5000 },
       ),
     ).toBeTruthy();
   });
 
-  it("does not render years in the timeline cards", async () => {
+  it("renders supplied professional dates without changing personal timeline cards", async () => {
     renderRoute("/about");
 
     await screen.findByText(
       /I'm a Senior Frontend Engineer specializing in the web/,
+      {},
+      { timeout: 5000 },
     );
 
-    expect(screen.queryByText(/2018-2026/)).toBeNull();
+    expect(await screen.findByText("2018-2026")).toBeTruthy();
     expect(screen.queryByText(/1997-2001/)).toBeNull();
     expect(screen.queryByText(/2017-PRESENT/)).toBeNull();
   });

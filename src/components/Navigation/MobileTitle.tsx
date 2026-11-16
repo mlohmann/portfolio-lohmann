@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { typography, sizes } from "@/style";
 
 /** Fixed mobile site label aligned with the menu control; it adds no heading level. */

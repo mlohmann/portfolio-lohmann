@@ -1,5 +1,6 @@
 /** Verifies metadata lookup, legacy dimension correction, and local responsive variants. */
 import { afterEach, expect, it, vi } from "vitest";
+
 import { imagePresentation } from "../imagePresentation";
 
 afterEach(() => vi.unstubAllEnvs());

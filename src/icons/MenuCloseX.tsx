@@ -1,4 +1,5 @@
-import { forwardRef, type SVGProps } from "react";
+import { forwardRef } from "react";
+import type { SVGProps } from "react";
 
 /** Reusable close glyph that forwards the SVG ref and native SVG attributes. */
 const CloseX = forwardRef<SVGSVGElement, SVGProps<SVGSVGElement>>(

@@ -53,3 +53,11 @@ NOTES.md
 /storybook-static/
 .venv/
 __pycache__/
+
+# Personal editor and design-tool configuration
+/.vscode/settings.json
+/.impeccable/config.json
+
+# Playwright output (baseline screenshots remain tracked).
+/playwright-report/
+/test-results/

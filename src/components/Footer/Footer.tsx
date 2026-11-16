@@ -1,4 +1,5 @@
-import { FooterText, HideMobile } from "@/components";
+import { FooterText } from "../Typography/Typography";
+import { HideMobile } from "../layout/Toggle";
 import StyledIconWrappers from "./StyledIconWrappers";
 import StyledFooter from "./StyledFooter";
 import FooterRow from "./FooterRow";
@@ -6,14 +7,14 @@ import FooterIcon from "./FooterIcon";
 import config from "@/data/config";
 
 /** Vector geometry for a brand icon rendered in the footer. */
-export type BrandIcon = {
+type BrandIcon = {
   width: number;
   height: number;
   path: string;
 };
 
 /** Inputs for one icon-only external social link in the footer. */
-export type FooterType = { url: string; icon: BrandIcon; label: string };
+type FooterType = { url: string; icon: BrandIcon; label: string };
 
 const GITHUB_ICON: BrandIcon = {
   width: 496,
@@ -48,13 +49,13 @@ const Footer = () => {
     <StyledFooter>
       <FooterRow>
         <FooterText>
-          <HideMobile>Copyright </HideMobile>© Matt Lohmann{" "}
+          <HideMobile as="span">Copyright </HideMobile>© Matt Lohmann{" "}
           {/* Static-homepage code refreshes this build-time value without mounting React. */}
           <span data-current-year>{year}</span>
         </FooterText>
         <StyledIconWrappers>
-          {icons.map(({ url, icon, label }, index) => (
-            <FooterIcon key={index} url={url} icon={icon} label={label} />
+          {icons.map(({ url, icon, label }) => (
+            <FooterIcon key={label} url={url} icon={icon} label={label} />
           ))}
         </StyledIconWrappers>
       </FooterRow>
@@ -63,3 +64,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+export type { BrandIcon, FooterType };

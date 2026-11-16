@@ -1,5 +1,5 @@
 /** Width and column measurements for one responsive layout breakpoint. */
-export type GridUnit = {
+type GridUnit = {
   maxWidth: number | string;
   gutter: number;
   columns: number;
@@ -7,13 +7,13 @@ export type GridUnit = {
 };
 
 /** Named breakpoints used to index responsive grid measurements. */
-export type Devices = "mobile" | "tablet" | "desktop" | "largeDesktop";
+type Devices = "mobile" | "tablet" | "desktop" | "largeDesktop";
 /** Grid measurements keyed by every supported device breakpoint. */
-export type Grids = Record<Devices, GridUnit>;
+type Grids = Record<Devices, GridUnit>;
 /** Semantic text-size choices accepted by link and display components. */
-export type DisplaySize = "xs" | "sm" | "md" | "lg" | "xl";
+type DisplaySize = "xs" | "sm" | "md" | "lg" | "xl";
 /** Optional semantic size override for display components. */
-export type DisplaySizeType = { size?: DisplaySize };
+type DisplaySizeType = { size?: DisplaySize };
 
 const device = {
   mobile: { width: 719, margin: 12 },
@@ -81,6 +81,11 @@ const sizes = {
   touchHeaderHeight: 100,
   drawerWidth: 300,
   projectNavThumb: 100,
+  timelineDot: 16,
+  markerDash: {
+    desktop: { width: 10, height: 3, offset: -20 },
+    touch: { width: 23, height: 6, offset: -34 },
+  },
   navControl: {
     fontSize: "1.5em",
     margin: "1em",
@@ -118,3 +123,5 @@ const sizes = {
 };
 
 export default sizes;
+
+export type { GridUnit, DisplaySizeType };

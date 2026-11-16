@@ -1,11 +1,10 @@
 import { Column, ListItem, Spacer } from "@/components";
 import { AnimatedOnScroll } from "@/components";
+import type { SkillType } from "./Skills";
 
-import { Skills } from "./Skills";
-
-/** Maps one skill record and its array index to an animated grid cell. */
-const Skill = (s: Skills, idx: number) => (
-  <Column $desktop="6-12" $largeDesktop="3-9" key={"skill" + idx}>
+/** Maps one skill record to an animated grid cell. */
+const Skill = (s: SkillType) => (
+  <Column $desktop="6-12" $largeDesktop="3-9" key={s.skill}>
     <AnimatedOnScroll animationIn="fadeInUpMedium">
       <ListItem>{s.skill}</ListItem>
       <Spacer />

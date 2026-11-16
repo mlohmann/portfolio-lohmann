@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { colors, sizes } from "@/style";
 import {
   H1,
   H2,
@@ -16,8 +17,10 @@ import {
 } from "@/components";
 
 const TypeWrapper = styled.div`
-  color: hotpink;
-  background-color: #333;
+  color: ${colors.textPrimary};
+  background-color: ${colors.almostBlack};
+  padding: ${sizes.spacing.xs}px ${sizes.spacing.sm}px;
+  border-left: 2px solid ${colors.highlight};
 `;
 
 const PageWrapper = styled.div`

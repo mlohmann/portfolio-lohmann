@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { colors, sizes } from "@/style";
 
 /** Fixed header layer that provides contrast behind the touch menu button. */

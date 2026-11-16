@@ -1,7 +1,8 @@
 import styled from "styled-components";
+
 import colors from "@/style/colors";
 import { sizes } from "@/style";
-import { LayoutType } from "@/types";
+import type { LayoutType } from "@/types";
 
 /** Timeline entry content panel with layout-dependent marker spacing. */
 const AboutCardWrapper = styled.div.withConfig({

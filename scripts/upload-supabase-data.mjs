@@ -115,7 +115,6 @@ for (const name of ["bio", "work", "skills", "clients"]) {
         title: vd.title,
         audio_description: vd.audioDescription,
         transcript: vd.transcript,
-        published: true,
       }),
     );
   },

@@ -2,22 +2,27 @@ import styled from "styled-components";
 
 import { Row, Column, ContentWrapper } from "@/components/layout";
 import { H4, Spacer } from "@/components";
+import { colors } from "@/style";
 
 const DemoRow = styled(Row)`
-  background: lightGrey;
+  background: ${colors.subtleBorder};
 `;
 
 const DemoColumn = styled(Column)`
   text-align: center;
-  background: red;
-  color: white;
+  background: ${colors.highlight};
+  color: ${colors.white};
+`;
+
+const SectionHeading = styled(H4)`
+  color: ${colors.highlight};
 `;
 
 /** Storybook sample of responsive grid spans, including legacy nested-span strings. */
 const LayoutDemo = () => (
   <ContentWrapper>
     <Spacer />
-    <H4 style={{ color: "red" }}>Single Columns</H4>
+    <SectionHeading>Single Columns</SectionHeading>
     <Spacer />
     <DemoRow>
       <DemoColumn $largeDesktop={1} $desktop={1} $tablet={1}>
@@ -58,7 +63,7 @@ const LayoutDemo = () => (
       </DemoColumn>
     </DemoRow>
     <Spacer />
-    <H4 style={{ color: "red" }}>Two Column</H4>
+    <SectionHeading>Two Column</SectionHeading>
     <Spacer />
     <DemoRow>
       <DemoColumn $largeDesktop={2} $desktop={2} $tablet={2}>
@@ -81,7 +86,7 @@ const LayoutDemo = () => (
       </DemoColumn>
     </DemoRow>
     <Spacer />
-    <H4 style={{ color: "red" }}>Three Column</H4>
+    <SectionHeading>Three Column</SectionHeading>
     <Spacer />
     <DemoRow>
       <DemoColumn $largeDesktop={3} $desktop={3} $tablet={3}>
@@ -98,7 +103,7 @@ const LayoutDemo = () => (
       </DemoColumn>
     </DemoRow>
     <Spacer />
-    <H4 style={{ color: "red" }}>Four Column</H4>
+    <SectionHeading>Four Column</SectionHeading>
     <Spacer />
     <DemoRow>
       <DemoColumn $largeDesktop={4} $desktop={4} $tablet={4}>
@@ -112,7 +117,7 @@ const LayoutDemo = () => (
       </DemoColumn>
     </DemoRow>
     <Spacer />
-    <H4 style={{ color: "red" }}>Of Columns</H4>
+    <SectionHeading>Of Columns</SectionHeading>
     <Spacer />
     <DemoRow>
       <DemoColumn $largeDesktop={4}>

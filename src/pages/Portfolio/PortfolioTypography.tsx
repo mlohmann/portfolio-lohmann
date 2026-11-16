@@ -1,7 +1,8 @@
-import { H4Style } from "@/components";
 import { Link } from "@tanstack/react-router";
-import { colors } from "@/style";
 import styled from "styled-components";
+
+import { H4Style } from "@/components";
+import { colors, typography } from "@/style";
 
 /** Portfolio card title that links to the corresponding project detail route. */
 const ProjectTitle = styled(Link)`
@@ -10,7 +11,7 @@ const ProjectTitle = styled(Link)`
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  font-weight: 600;
+  font-weight: ${typography.weight.semibold};
   overflow-wrap: break-word;
   word-break: break-word;
 `;

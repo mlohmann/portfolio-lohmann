@@ -1,6 +1,7 @@
 import styled from "styled-components";
+
 import { Row } from "@/components";
-import { LayoutType } from "./Preview";
+import type { LayoutType } from "./Preview";
 import { sizes } from "@/style";
 
 /** Flex row that mirrors project previews according to their alternating layout. */

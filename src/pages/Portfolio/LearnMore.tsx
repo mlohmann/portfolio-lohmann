@@ -1,25 +1,28 @@
-import { LinkType } from "@/types";
-import { DisplaySizeType } from "@/style/sizes";
+import type { LinkType } from "@/types";
+import type { DisplaySizeType } from "@/style/sizes";
 import LearnMoreWrapper from "./LearnMoreWrapper";
-import LearnMoveLink from "./LearnMoveLink";
+import LearnMoreLink from "./LearnMoreLink";
 import ArrowRight from "./ArrowRight";
 
 /** Link a portfolio preview to its project detail route. */
-const LearnMore = ({ url, size }: LinkType & DisplaySizeType) => {
+const LearnMore = ({
+  url,
+  size,
+  title,
+}: LinkType & DisplaySizeType & { title?: string }) => {
   // Preview callers may pass a full project path; only its final segment is the id.
   const projectId = url.split("/").filter(Boolean).pop();
 
   return (
     <LearnMoreWrapper>
-      <LearnMoveLink
+      <LearnMoreLink
         size={size}
-        from="/"
+        aria-label={title ? `Learn More about ${title}` : undefined}
         to={`/portfolio/project/${projectId ?? ""}`}
-        tabIndex={0}
       >
-        Learn More
-      </LearnMoveLink>
-      <ArrowRight />
+        <span>Learn More</span>
+        <ArrowRight aria-hidden="true" />
+      </LearnMoreLink>
     </LearnMoreWrapper>
   );
 };

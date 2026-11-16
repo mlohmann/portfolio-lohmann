@@ -1,5 +1,7 @@
-import { Component, ErrorInfo, ReactNode } from "react";
-import { ErrorDisplay } from "@/components/ErrorDisplay";
+import { Component } from "react";
+import type { ErrorInfo, ReactNode } from "react";
+
+import { ErrorDisplay } from "../ErrorDisplay";
 
 /** Descendant content and an optional replacement for the default error display. */
 interface Props {
@@ -33,7 +35,7 @@ class ErrorBoundary extends Component<Props, State> {
 
   /** Log caught details in development while rendering a user-facing fallback. */
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    if (process.env.NODE_ENV === "development") {
+    if (import.meta.env.DEV) {
       console.error("ErrorBoundary caught an error:", error, errorInfo);
     }
   }
