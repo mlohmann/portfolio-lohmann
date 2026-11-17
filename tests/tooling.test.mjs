@@ -25,7 +25,14 @@ async function workspace(t) {
   const directory = await realpath(
     await mkdtemp(path.join(os.tmpdir(), "portfolio-tooling-")),
   );
-  t.after(() => rm(directory, { recursive: true, force: true }));
+  t.after(() =>
+    rm(directory, {
+      recursive: true,
+      force: true,
+      maxRetries: 10,
+      retryDelay: 100,
+    }),
+  );
   await symlink(
     path.join(root, "node_modules"),
     path.join(directory, "node_modules"),
@@ -91,6 +98,7 @@ test("only approved public configuration reaches development modules and product
     root: directory,
     configFile: path.join(directory, "vite.config.ts"),
     logLevel: "silent",
+    optimizeDeps: { noDiscovery: true, include: [] },
   };
   const server = await createServer({
     ...options,
@@ -177,6 +185,66 @@ test("CMS generation is reproducible and uploader dry-runs cannot send network r
     runScript(directory, "upload-supabase-data.mjs", ["--dry-run"]),
     /No network requests sent/,
   );
+  // Validate actual upload bodies against the schema without contacting a CMS.
+  const columns = Object.fromEntries(
+    [
+      ...first[0].matchAll(
+        /create table if not exists public\.(\w+) \(\n([\s\S]*?)\n\);/g,
+      ),
+    ].map(([, table, definition]) => [
+      table,
+      definition
+        .split("\n")
+        .filter((line) => !line.trim().startsWith("primary key"))
+        .map((line) => line.trim().split(/\s+/)[0]),
+    ]),
+  );
+  await writeFile(
+    path.join(directory, "mock-cms.mjs"),
+    `import assert from 'node:assert/strict';
+const columns = ${JSON.stringify(columns)};
+globalThis.fetch = async (url, options) => {
+  const table = new URL(url).pathname.split('/').at(-1);
+  assert.ok(columns[table], 'Unknown upload table: ' + table);
+  for (const row of JSON.parse(options.body)) {
+    for (const key of Object.keys(row)) {
+      assert.ok(columns[table].includes(key), table + ' has no column ' + key);
+    }
+  }
+  return { ok: true };
+};`,
+  );
+  const upload = spawnSync(
+    process.execPath,
+    [
+      "--import",
+      path.join(directory, "deny-network.mjs"),
+      "--import",
+      path.join(directory, "mock-cms.mjs"),
+      path.join(directory, "scripts/upload-supabase-data.mjs"),
+    ],
+    {
+      cwd: directory,
+      encoding: "utf8",
+      env: {
+        ...process.env,
+        NEXT_PUBLIC_SUPABASE_URL: "https://fixture.example.invalid",
+        SUPABASE_SECRET_KEY: "sb_secret_fixture",
+      },
+      timeout: 30000,
+    },
+  );
+  assert.equal(upload.status, 0, upload.stderr || upload.stdout);
+  for (const [, table, names] of first[3].matchAll(
+    /insert into public\.(\w+) \(([^)]+)\)/g,
+  )) {
+    for (const name of names.split(",").map((value) => value.trim())) {
+      assert.ok(
+        columns[table].includes(name),
+        `${table} has no column ${name}`,
+      );
+    }
+  }
   const manifest = JSON.parse(first[4]);
   assert.ok(manifest.files.length > 0);
   // These synthetic bytes exercise file/path preflight; nothing is uploaded or decoded.

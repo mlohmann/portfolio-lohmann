@@ -1,6 +1,7 @@
 import { memo, useState, useEffect, useRef, useCallback } from "react";
+import type { ImgHTMLAttributes } from "react";
+
 import { imagePresentation } from "@/data/imagePresentation";
-import { ImgHTMLAttributes } from "react";
 import LazyImageBackground from "./LazyImageBackground";
 import StyledLazyImage from "./StyledLazyImage";
 
@@ -19,6 +20,8 @@ function LazyImage({
   width,
   height,
   fetchPriority,
+  onLoad,
+  onError,
   ...rest
 }: Props) {
   const presentation = imagePresentation(src || "", width, height);
@@ -39,11 +42,15 @@ function LazyImage({
   }, []);
 
   useEffect(() => {
-    // Cached images may already be complete before their load event is observed.
+    // Cached requests can finish before handlers attach. Failed images also need
+    // to become visible so the browser can display their alternative text.
+    const image = imgRef.current;
     setLoaded(
-      Boolean(imgRef.current?.complete && imgRef.current.naturalWidth > 0),
+      Boolean(
+        image?.complete && (image.currentSrc || image.getAttribute("src")),
+      ),
     );
-  }, [src]);
+  }, [src, shouldLoad]);
 
   useEffect(() => {
     if (shouldLoad || !imgRef.current) return;
@@ -67,7 +74,9 @@ function LazyImage({
         srcSet={shouldLoad ? presentation.srcSet : undefined}
         {...rest}
         loading={loading}
-        {...{ fetchpriority: fetchPriority }}
+        {...(fetchPriority && fetchPriority !== "auto"
+          ? { fetchpriority: fetchPriority }
+          : {})}
         $loaded={loaded}
         src={shouldLoad ? src : undefined}
         style={{
@@ -79,7 +88,14 @@ function LazyImage({
         }}
         alt={alt || ""}
         ref={imgRef}
-        onLoad={handleLoad}
+        onLoad={(event) => {
+          handleLoad();
+          onLoad?.(event);
+        }}
+        onError={(event) => {
+          setLoaded(true);
+          onError?.(event);
+        }}
         className={className ?? ""}
       />
     </LazyImageBackground>

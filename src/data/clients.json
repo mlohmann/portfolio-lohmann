@@ -1,24 +1,24 @@
 {
   "clients": [
     {
-      "url": "http://www.aol.com",
+      "url": "https://www.aol.com",
       "image": "aol.png",
       "alt": "AOL"
     },
     {
-      "url": "http://www.bottegaveneta.com",
+      "url": "https://www.bottegaveneta.com",
       "image": "bv.png",
-      "alt": "bottega veneta"
+      "alt": "Bottega Veneta"
     },
     {
-      "url": "http://www.calvinklein.com",
+      "url": "https://www.calvinklein.com",
       "image": "calvin-klein.png",
-      "alt": "calvinklein"
+      "alt": "Calvin Klein"
     },
     {
-      "url": "http://www.usa.canon.com/cusa/home",
+      "url": "https://www.usa.canon.com/cusa/home",
       "image": "canon.png",
-      "alt": "canon"
+      "alt": "Canon"
     },
     {
       "url": "https://eji.org/",
@@ -28,77 +28,77 @@
     {
       "url": "https://fashionforgood.com/",
       "image": "ffg.png",
-      "alt": "fashionforgood"
+      "alt": "Fashion for Good"
     },
     {
-      "url": "http://google.com",
+      "url": "https://google.com",
       "image": "google-logo.png",
-      "alt": "google"
+      "alt": "Google"
     },
     {
       "url": "https://www.harvard.edu/",
       "image": "harvard.png",
-      "alt": "harvard"
+      "alt": "Harvard University"
     },
     {
-      "url": "http://www.nyc.gov/html/film/html/home/home.shtml",
+      "url": "https://www.nyc.gov/html/film/html/home/home.shtml",
       "image": "made-in-ny.png",
-      "alt": "made-in-ny"
+      "alt": "Made in NY"
     },
     {
-      "url": "http://www.marcjacobs.com",
+      "url": "https://www.marcjacobs.com",
       "image": "marc-jacobs.png",
-      "alt": "marcjacobs"
+      "alt": "Marc Jacobs"
     },
     {
-      "url": "http://www.marshallsonline.com",
+      "url": "https://www.marshallsonline.com",
       "image": "marshalls.png",
-      "alt": "marshalls"
+      "alt": "Marshalls"
     },
     {
-      "url": "http://www.newbalance.com",
+      "url": "https://www.newbalance.com",
       "image": "nb.png",
-      "alt": "newbalance"
+      "alt": "New Balance"
     },
     {
-      "url": "http://nysci.org",
+      "url": "https://nysci.org",
       "image": "nysci.png",
-      "alt": "nysci"
+      "alt": "New York Hall of Science"
     },
     {
-      "url": "http://www.ralphlauren.com",
+      "url": "https://www.ralphlauren.com",
       "image": "polo-ralph.png",
-      "alt": "ralphlauren"
+      "alt": "Ralph Lauren"
     },
     {
-      "url": "http://www.puma.com",
+      "url": "https://www.puma.com",
       "image": "puma.png",
-      "alt": "puma"
+      "alt": "PUMA"
     },
     {
-      "url": "http://www.rauschenbergfoundation.org",
+      "url": "https://www.rauschenbergfoundation.org",
       "image": "rrf.png",
-      "alt": "rauschenbergfoundation"
+      "alt": "Robert Rauschenberg Foundation"
     },
     {
-      "url": "http://www.tntdrama.com",
+      "url": "https://www.tntdrama.com",
       "image": "tnt.png",
-      "alt": "tntdrama"
+      "alt": "TNT Drama"
     },
     {
-      "url": "http://www.tretorn.com",
+      "url": "https://www.tretorn.com",
       "image": "tretorn.png",
-      "alt": "tretorn"
+      "alt": "Tretorn"
     },
     {
-      "url": "http://www.warnerbrosrecords.com",
+      "url": "https://www.warnerbrosrecords.com",
       "image": "wb.png",
-      "alt": "warnerbrosrecords"
+      "alt": "Warner Bros. Records"
     },
     {
       "url": "https://xqsuperschool.org/",
       "image": "xq.png",
-      "alt": "xqsuperschool"
+      "alt": "XQ Super School"
     }
   ]
 }

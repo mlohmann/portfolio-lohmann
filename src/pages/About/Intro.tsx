@@ -1,5 +1,4 @@
 import { AnimatedOnScroll } from "@/components";
-
 import { Paragraph, Spacer } from "@/components";
 import { IntroTitle } from "./AboutTypography";
 

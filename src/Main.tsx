@@ -1,14 +1,15 @@
-import { FC, ReactNode } from "react";
+import type { FC, ReactNode } from "react";
 import styled, { css } from "styled-components";
 
-import { sizes, colors, animation } from "@/style";
-import { useAppStoreContext } from "@/hooks/useAppStoreContext";
+import { sizes, colors, animation } from "./style";
+import { useAppStoreContext } from "./hooks/useAppStoreContext";
 
 /** Main-content surface whose pseudo-element dims the page while the menu is open. */
 const StyledMain = styled.main.withConfig({
   shouldForwardProp: (prop) => prop !== "showmenu",
 })<{ showmenu?: boolean }>`
   min-height: 100vh;
+  min-height: 100dvh;
 
   &:before {
     content: "";
@@ -19,7 +20,7 @@ const StyledMain = styled.main.withConfig({
     display: block;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: ${sizes.zIndex.base};
     opacity: 0;
     transition: opacity ${animation.transition} linear;
 

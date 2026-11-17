@@ -1,5 +1,6 @@
-import { sizes } from "@/style";
 import styled from "styled-components";
+
+import { sizes } from "@/style";
 
 const { query, grid } = sizes;
 

@@ -1,4 +1,5 @@
 import type { Meta } from "@storybook/react";
+
 import { LayoutDemo } from "./LayoutDemo";
 
 /** Storybook registration for the responsive grid demonstration. */

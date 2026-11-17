@@ -10,4 +10,4 @@ export * from "./LazyImage";
 export * from "./ErrorDisplay";
 export * from "./ErrorBoundary";
 export * from "./RouteAnnouncer";
-export { default as AnimatedOnScroll } from "./AnimatedOnScroll/AnimatedOnScroll";
+export * from "./AnimatedOnScroll";

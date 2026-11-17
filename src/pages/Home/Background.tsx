@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { colors } from "@/style";
 
 /** Dark homepage surface behind the decorative image and introduction. */

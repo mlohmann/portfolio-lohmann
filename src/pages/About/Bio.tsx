@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+
 import { useContent } from "@/hooks";
 import {
   AnimatedOnScroll,
@@ -32,20 +33,20 @@ const Bio = () => {
 
   return (
     <>
-      <Spacer key="bio-top-spacer" />
-      <AnimatedOnScroll animationIn="fadeIn" key="bio-animation">
+      <Spacer />
+      <AnimatedOnScroll animationIn="fadeIn">
         <AdditionalInfo as="h2">Personal Timeline</AdditionalInfo>
       </AnimatedOnScroll>
-      <Spacer key="bio-mid-spacer" />
-      <AboutTimeline key="time-line">
+      <Spacer />
+      <AboutTimeline>
         {reversed.map((item: BioType, idx: number) => {
           const displayLayout = idx % 2 === 0 ? "left" : "right";
 
           return (
-            <Fragment key={`bio-${idx}`}>
+            <Fragment key={`${item.location}-${item.years ?? idx}`}>
               <AboutRow displayLayout={displayLayout}>
-                <Column $tablet={1} $desktop={1} $largeDesktop={1} />
-                <Column $tablet={5} $desktop={5} $largeDesktop={5}>
+                <Column $desktop={1} $largeDesktop={1} />
+                <Column $desktop={5} $largeDesktop={5}>
                   <AnimatedOnScroll animationIn="fadeInUpMedium">
                     <AboutCard
                       displayLayout={displayLayout}
@@ -54,8 +55,8 @@ const Bio = () => {
                     />
                   </AnimatedOnScroll>
                 </Column>
-                <Column $tablet={5} $desktop={5} $largeDesktop={5} />
-                <Column $tablet={1} $desktop={1} $largeDesktop={1} />
+                <Column $desktop={5} $largeDesktop={5} />
+                <Column $desktop={1} $largeDesktop={1} />
               </AboutRow>
               <HideDesktop>
                 <Spacer />

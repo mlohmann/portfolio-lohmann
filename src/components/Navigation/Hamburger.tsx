@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { animation, colors, effects, sizes } from "@/style";
 
 const { focus } = effects;

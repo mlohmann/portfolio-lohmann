@@ -1,6 +1,7 @@
-import { imageUrl } from "@/data/images";
 import { memo, useMemo } from "react";
 import { getRouteApi } from "@tanstack/react-router";
+
+import { imageUrl } from "@/data/images";
 import { useContent } from "@/hooks";
 import config from "@/data/config";
 import { AnimatedOnScroll } from "@/components";
@@ -18,6 +19,7 @@ import {
   HideTouch,
   Loading,
   OverflowHidden,
+  LazyImage,
 } from "@/components";
 import {
   ProjectLink,
@@ -27,8 +29,8 @@ import {
   ProjectNonSite,
 } from "./ProjectTypography";
 import ThumbPreview from "./ThumbPreview";
-import LazyImage from "@/components/LazyImage/LazyImage";
 import { ErrorDisplay } from "@/components/ErrorDisplay";
+import Error404 from "../Error404";
 import PrevNextNav from "./PrevNextNav";
 import Seo from "@/seo";
 
@@ -43,7 +45,7 @@ type Image = {
 /**
  * Content contract shared by project-list entries and individual project pages.
  * Some presentation fields are optional at runtime because legacy records vary. */
-export type ProjectType = {
+type ProjectType = {
   /** Whether the external project destination is still active. */
   active?: boolean;
   /** Stable project identifier used in the detail route. */
@@ -61,7 +63,7 @@ export type ProjectType = {
   images: Image[];
   duties: string[];
   /** One or more external launch URLs; may be empty for offline projects. */
-  launchURL: string | string[];
+  launchURL?: string | string[];
   subtitle: string;
   layout: string;
   modalId: string;
@@ -109,13 +111,23 @@ const Project = () => {
       client,
     } = data;
 
-    const urls = Array.isArray(launchURL) ? launchURL : [launchURL];
+    const urls = (Array.isArray(launchURL) ? launchURL : [launchURL]).filter(
+      (url): url is string => typeof url === "string" && url.trim().length > 0,
+    );
     const projects = projectsData.projects || [];
-    // Match by title because the older project records do not consistently use ids.
-    const index = projects.findIndex((proj) => proj.title === title);
-    const nextProject = projects[(index + 1) % projects.length];
+    // Match by ID first with title fallback for older records.
+    const index = projects.findIndex(
+      (proj) => proj.id === project || proj.title === title,
+    );
+    const hasMultiple = projects.length > 1;
+    const nextProject =
+      hasMultiple && index !== -1
+        ? projects[(index + 1) % projects.length]
+        : null;
     const prevProject =
-      projects[(index - 1 + projects.length) % projects.length];
+      hasMultiple && index !== -1
+        ? projects[(index - 1 + projects.length) % projects.length]
+        : null;
 
     return {
       next: nextProject,
@@ -133,7 +145,7 @@ const Project = () => {
         client,
       },
     };
-  }, [data, projectsData]);
+  }, [data, projectsData, project]);
 
   // Inactive destinations remain readable metadata instead of clickable links.
   const launchURLSection = projectData ? (
@@ -154,7 +166,11 @@ const Project = () => {
                 {projectData.active === false ? (
                   <ProjectNonSite>{displayURL} (inactive)</ProjectNonSite>
                 ) : (
-                  <ProjectLink href={url} target="_blank">
+                  <ProjectLink
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {displayURL}
                   </ProjectLink>
                 )}
@@ -226,7 +242,7 @@ const Project = () => {
       </Column>
       <Column $desktop={8} $largeDesktop={8}>
         {projectData.images.slice(1).map((image, idx) => (
-          <OverflowHidden key={projectData.title + idx}>
+          <OverflowHidden key={image.src || `${projectData.title}-${idx}`}>
             <AnimatedOnScroll animationIn="fadeInUpMedium">
               <LazyImage
                 src={imageUrl(image.src, config.screenPath)}
@@ -246,15 +262,38 @@ const Project = () => {
   ) : null;
 
   if (error || projectError) {
+    const isNotFound = (err: unknown) =>
+      err instanceof Error &&
+      (err.message.includes("JSON data file not found") ||
+        err.message.includes("Published CMS entry not found"));
+    if (isNotFound(error) || isNotFound(projectError)) {
+      return <Error404 />;
+    }
     return (
-      <ErrorDisplay>
-        {error?.toString() || projectError?.toString()}
-      </ErrorDisplay>
+      <ContentWrapper>
+        <Seo
+          title="Project"
+          path={`/portfolio/project/${project}`}
+          type="article"
+        />
+        <ErrorDisplay>
+          {error?.toString() || projectError?.toString()}
+        </ErrorDisplay>
+      </ContentWrapper>
     );
   }
 
   if (isLoading || projectIsLoading || !data || !projectsData || !projectData) {
-    return <Loading />;
+    return (
+      <>
+        <Seo
+          title="Project"
+          path={`/portfolio/project/${project}`}
+          type="article"
+        />
+        <Loading />
+      </>
+    );
   }
 
   const { title, text, images, duties, alt, projectType, client } = projectData;
@@ -301,22 +340,24 @@ const Project = () => {
               </Row>
             </div>
           </Column>
-          <Column $desktop={7} $largeDesktop={7}>
-            <OverflowHidden>
-              <AnimatedOnScroll animationIn="fadeInUpMedium">
-                <LazyImage
-                  src={imageUrl(images[0].src, config.screenPath)}
-                  loading="eager"
-                  fetchPriority="high"
-                  alt={
-                    images[0].alt || `${alt || title} main interface overview`
-                  }
-                  width={images[0].width}
-                  height={images[0].height}
-                />
-              </AnimatedOnScroll>
-            </OverflowHidden>
-          </Column>
+          {images?.[0]?.src && (
+            <Column $desktop={7} $largeDesktop={7}>
+              <OverflowHidden>
+                <AnimatedOnScroll animationIn="fadeInUpMedium">
+                  <LazyImage
+                    src={imageUrl(images[0].src, config.screenPath)}
+                    loading="eager"
+                    fetchPriority="high"
+                    alt={
+                      images[0].alt || `${alt || title} main interface overview`
+                    }
+                    width={images[0].width}
+                    height={images[0].height}
+                  />
+                </AnimatedOnScroll>
+              </OverflowHidden>
+            </Column>
+          )}
         </Row>
         <Spacer size="lg" />
         <AnimatedOnScroll animationIn="fadeInScaleX">
@@ -343,3 +384,5 @@ const Project = () => {
 };
 
 export default memo(Project);
+
+export type { ProjectType };

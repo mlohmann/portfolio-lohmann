@@ -1,6 +1,7 @@
-import { sizes } from "@/style";
-import { GridUnit } from "@/style/sizes";
 import styled, { css } from "styled-components";
+
+import { sizes } from "@/style";
+import type { GridUnit } from "@/style/sizes";
 
 /** Transient grid spans consumed by styling instead of being forwarded to the DOM. */
 type ColumnType = {
@@ -27,7 +28,7 @@ const getColumnWidth = (grid: GridUnit, count: number | string) => {
     return "width: 0;";
   }
 
-  if (grid === sizes.grid.mobile) {
+  if (grid === sizes.grid.mobile || grid === sizes.grid.tablet) {
     if (columnNum >= columns) {
       return "width: 100%;";
     }

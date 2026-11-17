@@ -1,5 +1,6 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import styled from "styled-components";
+
 import { colors, typography, sizes } from "@/style";
 
 type Props = {
@@ -22,8 +23,8 @@ const StyledError = styled.div`
 `;
 
 /**
- * Accessible container with alert semantics for readable route and content-loading error
- * messages.
+ * Accessible container with alert semantics for readable route 
+ * and content-loading error messages.
  */
 const ErrorDisplay = ({ children }: Props) => (
   <StyledError role="alert" aria-live="assertive" aria-atomic="true">

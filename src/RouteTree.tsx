@@ -1,13 +1,8 @@
 import { lazy, Suspense } from "react";
-import {
-  createRootRoute,
-  createRoute,
-  Outlet,
-  useRouterState,
-} from "@tanstack/react-router";
+import { createRootRoute, createRoute, Outlet, useRouterState } from "@tanstack/react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import { GlobalStyle } from "@/style";
+import { GlobalStyle } from "./style";
 import {
   Footer,
   Navigation,
@@ -15,20 +10,18 @@ import {
   ErrorBoundary,
   RouteAnnouncer,
   RouteFocusHandler,
-} from "@/components";
+} from "./components";
 import AppWrapper from "./AppWrapper";
 import Content from "./Content";
 import Main from "./Main";
 import AppStore from "./AppStore";
-import Seo from "./seo";
-
 // Build-time rendering needs the homepage synchronously; other routes stay lazy.
-import Home from "@/pages/Home";
-const About = lazy(() => import("@/pages/About"));
-const Portfolio = lazy(() => import("@/pages/Portfolio"));
-const Press = lazy(() => import("@/pages/Press"));
-const Project = lazy(() => import("@/pages/Project"));
-const Error404 = lazy(() => import("@/pages/Error404"));
+import Home from "./pages/Home";
+const About = lazy(() => import("./pages/About"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
+const Press = lazy(() => import("./pages/Press"));
+const Project = lazy(() => import("./pages/Project"));
+const Error404 = lazy(() => import("./pages/Error404"));
 
 // Reuse one client so route-level queries share cache and retry policy.
 const queryClient = new QueryClient({
@@ -45,12 +38,13 @@ const queryClient = new QueryClient({
 /** Renders the common shell and the active route inside shared providers. */
 function RootLayout() {
   const pathname = useRouterState({
-    select: (state) => state.location.pathname,
+    // The requested location can change while the previous Outlet is still mounted.
+    select: (state) =>
+      state.resolvedLocation?.pathname ?? state.location.pathname,
   });
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Seo title="Matt Lohmann" />
       <AppStore>
         <AppWrapper>
           <GlobalStyle />

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
@@ -23,7 +26,7 @@
       content="Matt Lohmann is a Senior Frontend Engineer specializing in interactive websites and digital experiences."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://mattlohmann.com/" />
+    <meta property="og:url" content="https://mattlohmann.com" />
     <meta
       property="og:image"
       content="https://mattlohmann.com/android-chrome-512x512.png"
@@ -37,8 +40,15 @@
       html,
       body {
         background: #000;
+        font-family: "Quattrocento", serif, Arial, sans-serif;
       }
     </style>
+    <link
+      rel="preload"
+      as="image"
+      href="/background/background_1.jpg"
+      fetchpriority="high"
+    />
     <link
       rel="preload"
       href="/fonts/quattrocento-400.woff2"

@@ -38,6 +38,8 @@ jobs:
           echo "IMAGE_PYTHON=$RUNNER_TEMP/portfolio-image-tools/bin/python" >> "$GITHUB_ENV"
       - name: Type check
         run: npm run typecheck
+      - name: Lint
+        run: npm run lint
       - name: Unit, maintenance, and production browser tests
         env:
           CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}

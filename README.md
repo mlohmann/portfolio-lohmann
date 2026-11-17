@@ -3,6 +3,38 @@
 React and TypeScript portfolio, built with Vite. The production homepage is
 prerendered; other routes load the React application.
 
+---
+
+## 🎨 Design System
+
+The application is built on the **Lohmann Design System (LDS)** — a Minimalist Design Engineering Portfolio System featuring strict token governance, WCAG 2.1 AA/AAA accessibility, and living Storybook documentation.
+
+[![Design Tokens](https://img.shields.io/badge/Design%20Tokens-100%25%20Strict-E13C47?style=flat-square)](DESIGN_SYSTEM.md)
+[![WCAG](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA%20%2F%20AAA-brightgreen?style=flat-square)](DESIGN_SYSTEM.md#8-accessibility-a11y--inclusivity)
+[![Storybook](https://img.shields.io/badge/Storybook-Living%20Styleguide-FF4785?style=flat-square)](DESIGN_SYSTEM.md#10-living-documentation-storybook)
+
+👉 **[Read the Full Design System Guide & Token Reference (DESIGN_SYSTEM.md)](DESIGN_SYSTEM.md)**
+
+### Design System Highlights
+
+| Foundation | Specification | Source Token / Reference |
+| :--- | :--- | :--- |
+| **Color Palette** | Pure Black (`#000000`), Pure White (`#ffffff`), Imperial Red (`#e63746`) | [`src/style/colors.ts`](src/style/colors.ts) |
+| **Typography Trio** | **Oswald** (Display), **Quattrocento** (Editorial Prose), **Source Sans Pro** (UI) | [`src/style/typography.ts`](src/style/typography.ts) |
+| **Typographic Scale** | `10rem` (h1) down to `0.75rem` (small) with fluid clamp scaling | [`src/style/typography.ts`](src/style/typography.ts) |
+| **Spacing Rhythm** | Harmonic 8-point grid (`xs: 8px` to `xxl: 182px`) with mobile scaling | [`src/style/sizes.ts`](src/style/sizes.ts) |
+| **Responsive Grid** | Mobile (2-col), Tablet (2-col), Desktop (12-col), Large Desktop (12-col) | [`src/style/sizes.ts`](src/style/sizes.ts) |
+| **Motion & Micro-interactions** | Directional hover underlines, glowing focus ring, custom cubic-beziers | [`src/style/effects.ts`](src/style/effects.ts), [`src/style/animation.ts`](src/style/animation.ts) |
+| **Accessibility (a11y)** | 21:1 primary contrast, `@media (forced-colors)` & reduced-motion support | [A11y Guide](DESIGN_SYSTEM.md#8-accessibility-a11y--inclusivity) |
+
+To launch the living Storybook styleguide locally:
+
+```sh
+npm run storybook
+```
+
+---
+
 ## Requirements and setup
 
 - Node **22.23.4**, selected by `.nvmrc`, with npm **10.9.9**.

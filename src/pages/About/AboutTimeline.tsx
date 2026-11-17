@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { sizes, colors } from "@/style";
 
 /** Shared timeline rail positioning for work and personal history entries. */

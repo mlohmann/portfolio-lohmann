@@ -291,7 +291,6 @@ create table if not exists public.press_video_details (
   title text not null,
   audio_description text not null,
   transcript text not null,
-  published boolean not null default true,
   primary key (press_id, sort_order)
 );
 alter table public.press_video_details enable row level security;
@@ -315,7 +314,8 @@ for (const row of tables.press.rows) {
   }
 }
 for (const row of tables.press_video_details.rows) {
-  altUpdates += `\ninsert into public.press_video_details (press_id, sort_order, title, audio_description, transcript, published) values (${quote(row.press_id)}, ${row.sort_order}, ${literal(row.title)}, ${literal(row.audio_description)}, ${literal(row.transcript)}, true)\non conflict (press_id, sort_order) do update set title = excluded.title, audio_description = excluded.audio_description, transcript = excluded.transcript, published = true;`;
+  // Child visibility follows the parent press record, matching the main schema.
+  altUpdates += `\ninsert into public.press_video_details (press_id, sort_order, title, audio_description, transcript) values (${quote(row.press_id)}, ${row.sort_order}, ${literal(row.title)}, ${literal(row.audio_description)}, ${literal(row.transcript)})\non conflict (press_id, sort_order) do update set title = excluded.title, audio_description = excluded.audio_description, transcript = excluded.transcript;`;
 }
 altUpdates += `\n\nnotify pgrst, 'reload schema';\ncommit;\n`;
 await writeFile(path.join(root, "supabase/update-alt-text.sql"), altUpdates);

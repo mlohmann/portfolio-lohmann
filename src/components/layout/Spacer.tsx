@@ -6,7 +6,9 @@ type Size = keyof typeof sizes.spacing;
 type SizingType = { size?: Size };
 
 /** Responsive-layout spacer using one of the shared vertical spacing tokens. */
-const Spacer = styled.div<SizingType>`
+const Spacer = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "size",
+})<SizingType>`
   height: ${({ size = "md" }: SizingType) => sizes?.spacing[size] + "px"};
   width: 100%;
 

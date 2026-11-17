@@ -1,15 +1,8 @@
 import { imagePresentation } from "@/data/imagePresentation";
 import { imageUrl } from "@/data/images";
-
 import { useContent } from "@/hooks";
 import config from "@/data/config";
-import {
-  AnimatedOnScroll,
-  Row,
-  Column,
-  AdditionalInfo,
-  Loading,
-} from "@/components";
+import { AnimatedOnScroll, Row, Column, AdditionalInfo, Loading } from "@/components";
 import ClientsWrapper from "./ClientsWrapper";
 import ClientWrapper from "./ClientWrapper";
 import { ErrorDisplay } from "@/components/ErrorDisplay";
@@ -39,19 +32,16 @@ const Clients = () => {
       </Column>
       <Column $largeDesktop={9}>
         <ClientsWrapper>
-          {data.clients.map(({ url, image, alt }: ClientsType, idx: number) => {
+          {data.clients.map(({ url, image, alt }: ClientsType) => {
             return (
               <ClientWrapper
-                key={"client-" + idx}
+                key={alt || image}
                 $desktop="6-12"
                 $largeDesktop="3-9"
               >
-                <AnimatedOnScroll
-                  animationIn="fadeInUpMedium"
-                  key={`client-${idx}`}
-                >
+                <AnimatedOnScroll animationIn="fadeInUpMedium">
                   {url ? (
-                    <a href={url}>
+                    <a href={url} target="_blank" rel="noopener noreferrer">
                       <img
                         {...imagePresentation(
                           imageUrl(image, config.logosPath),

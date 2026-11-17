@@ -2,16 +2,16 @@ import { Link } from "@tanstack/react-router";
 import styled from "styled-components";
 
 import { colors, effects, sizes, typography } from "@/style";
-import { H4Style } from "@/components/Typography";
+import { H4Style } from "../Typography";
 
 const { beforeAfter, activeHover, focus } = effects;
-const { sizing, font } = typography;
+const { sizing, font, weight } = typography;
 
 /** Styled route link with active, hover, and keyboard-focus treatments. */
 const NavLink = styled(Link)`
   font-family: ${font.nav};
   font-size: ${sizing.nav};
-  font-weight: 700;
+  font-weight: ${weight.bold};
   color: ${colors.textHighlight};
   text-decoration: none;
   text-transform: uppercase;
@@ -29,9 +29,9 @@ const NavLink = styled(Link)`
     position: relative;
 
     &:before {
-      left: -20px;
-      height: 3px;
-      width: 10px;
+      left: ${sizes.markerDash.desktop.offset}px;
+      height: ${sizes.markerDash.desktop.height}px;
+      width: ${sizes.markerDash.desktop.width}px;
       top: 11px;
       background: ${colors.white};
       ${beforeAfter}
@@ -41,7 +41,7 @@ const NavLink = styled(Link)`
       bottom: -2px;
       left: 0;
       width: 100%;
-      height: 3px;
+      height: ${sizes.markerDash.desktop.height}px;
       background: ${colors.textHighlight};
       z-index: -1;
       ${beforeAfter}
@@ -56,14 +56,14 @@ const NavLink = styled(Link)`
 
       &:before {
         top: 16px;
-        left: -34px;
-        height: 6px;
-        width: 23px;
+        left: ${sizes.markerDash.touch.offset}px;
+        height: ${sizes.markerDash.touch.height}px;
+        width: ${sizes.markerDash.touch.width}px;
       }
 
       &:before,
       &:after {
-        height: 6px;
+        height: ${sizes.markerDash.touch.height}px;
       }
     }
   }

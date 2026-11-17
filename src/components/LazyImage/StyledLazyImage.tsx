@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { animation } from "@/style";
+
+import { animation, colors } from "@/style";
 
 /** Image presentation whose opacity reflects the parent's load state. */
 const StyledLazyImage = styled.img<{ $loaded: boolean }>`
@@ -8,7 +9,12 @@ const StyledLazyImage = styled.img<{ $loaded: boolean }>`
   width: 100%;
   max-width: 100%;
   height: auto;
+  color: ${colors.textPrimary};
   opacity: ${({ $loaded }) => ($loaded ? "1" : "0")};
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 `;
 
 export default StyledLazyImage;

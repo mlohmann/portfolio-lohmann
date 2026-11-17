@@ -1,9 +1,29 @@
 /* Document defaults shared by the static homepage and client-rendered routes. */
+:root {
+  color-scheme: dark;
+}
+
+:focus-visible {
+  outline: 2px solid #e63746;
+  outline-offset: 4px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 4px;
+  }
+}
+
 body {
   margin: 0;
   font-weight: 400;
   font-size: 1em;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Quattrocento", serif, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -58,13 +78,14 @@ img {
 }
 
 @media print, (prefers-reduced-motion: reduce) {
-  .scroll-animation {
-    opacity: 1;
-  }
-
-  .animate__animated {
-    animation-duration: 1ms !important;
-    animation-delay: 0ms !important;
+  .scroll-animation,
+  .animate__animated,
+  .fadeInUpMedium,
+  .fadeInScaleX,
+  .animate__fadeIn {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
   }
 }
 
@@ -102,4 +123,22 @@ img {
   opacity: 0;
   animation-name: fadeInScaleX;
   animation-delay: var(--entrance-delay);
+}
+
+/* Keep navigation states immediate for visitors who request reduced motion.
+   These selectors cover both React routes and the static homepage controls. */
+@media (prefers-reduced-motion: reduce) {
+  #site-navigation,
+  #site-navigation ul,
+  #site-navigation li,
+  [data-prerendered] #site-navigation[aria-hidden="false"],
+  [data-prerendered] #site-navigation[aria-hidden="false"] ul,
+  [data-prerendered] #site-navigation[aria-hidden="false"] li {
+    transition: none !important;
+  }
+  .animate__animated {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
 }

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
-import { sizes } from "@/style";
+
+import { animation, sizes } from "@/style";
 
 type Props = {
   showmenu?: boolean;
@@ -13,8 +14,8 @@ const NavItem = styled.li.withConfig({
   display: block;
   padding: 0.8em;
   transform: translate3d(0, 500px, 0);
-  transition: transform 0s 0.4s;
-  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition: transform 0s ${animation.normal};
+  transition-timing-function: ${animation.ease.drawer};
 
   ${({ index = 0 }) => css`
     transform: translate3d(0, ${250 * index + 250}px, 0);
@@ -24,8 +25,8 @@ const NavItem = styled.li.withConfig({
     showmenu &&
     css`
       transform: translate3d(0, 0, 0);
-      transition: transform 0.8s;
-      transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+      transition: transform ${animation.drawer};
+      transition-timing-function: ${animation.ease.drawer};
       transition-duration: 1.2s;
     `}
     

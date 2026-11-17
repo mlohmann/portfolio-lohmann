@@ -1,5 +1,4 @@
 import { AnimatedOnScroll } from "@/components";
-
 import HorizontalSpacer from "./HorizontalSpacer";
 
 /** Viewport-aware wrapper that positions the portfolio preview divider. */

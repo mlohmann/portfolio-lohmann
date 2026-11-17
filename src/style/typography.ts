@@ -21,6 +21,12 @@ const typography = {
     small,
     footer,
   },
+  weight: {
+    thin: 100,
+    regular: 400,
+    semibold: 600,
+    bold: 700,
+  },
   sizing: {
     base: "16px",
     p: "1.25rem",
@@ -30,6 +36,7 @@ const typography = {
     h4: "2.75rem",
     h5: "1.75rem",
     h6: "1rem",
+    link: "1rem",
     nav: "1.75rem",
     small: "0.75rem",
     mobile: {

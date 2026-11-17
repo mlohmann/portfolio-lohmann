@@ -1,6 +1,7 @@
 import styled from "styled-components";
+
 import { colors, sizes } from "@/style";
-import { VisuallyHidden } from "@/components/Typography";
+import { VisuallyHidden } from "../Typography";
 
 /** Centered folding-cube decoration behind the accessible loading status. */
 const StyledLoading = styled.div`

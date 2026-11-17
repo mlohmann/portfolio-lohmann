@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { BreakpointWidths } from "@/components";
+
+import BreakpointWidths from "../layout/BreakpointWidths";
 
 /** Centered, responsive horizontal alignment for footer content. */
 const FooterRow = styled(BreakpointWidths)`

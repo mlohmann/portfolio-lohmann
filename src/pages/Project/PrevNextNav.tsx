@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { sizes } from "@/style";
 
 /** Fixed desktop layer that anchors previous and next project previews. */

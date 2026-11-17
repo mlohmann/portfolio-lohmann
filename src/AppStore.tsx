@@ -1,5 +1,7 @@
-import { useState, useMemo, useCallback, ReactNode } from "react";
-import { AppStoreContext } from "@/hooks/useAppStoreContext";
+import { useState, useMemo, useCallback } from "react";
+import type { ReactNode } from "react";
+
+import { AppStoreContext } from "./hooks/useAppStoreContext";
 
 /** Provides shared application state for the navigation menu. */
 const AppStore = ({ children }: { children: ReactNode }) => {
@@ -25,5 +27,4 @@ const AppStore = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export { AppStoreContext };
 export default AppStore;

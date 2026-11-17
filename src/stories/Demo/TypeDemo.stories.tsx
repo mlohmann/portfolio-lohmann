@@ -1,4 +1,5 @@
 import type { Meta } from "@storybook/react";
+
 import { TypeDemo } from "./TypeDemo";
 
 /** Storybook registration for the typography demonstration. */

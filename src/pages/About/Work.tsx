@@ -1,12 +1,7 @@
 import { Fragment } from "react";
+
 import { useContent } from "@/hooks";
-import {
-  AnimatedOnScroll,
-  Spacer,
-  Column,
-  AdditionalInfo,
-  HideDesktop,
-} from "@/components";
+import { AnimatedOnScroll, Spacer, Column, AdditionalInfo, HideDesktop } from "@/components";
 import AboutCard from "./AboutCard";
 import AboutRow from "./AboutRow";
 import AboutTimeline from "./AboutTimeline";
@@ -42,20 +37,21 @@ const Work = () => {
           const displayLayout = idx % 2 === 0 ? "left" : "right";
 
           return (
-            <Fragment key={`work-${idx}`}>
+            <Fragment key={`${company.company}-${company.title}`}>
               <AboutRow displayLayout={displayLayout}>
-                <Column $tablet={1} $desktop={1} $largeDesktop={1} />
-                <Column $tablet={5} $desktop={5} $largeDesktop={5}>
+                <Column $desktop={1} $largeDesktop={1} />
+                <Column $desktop={5} $largeDesktop={5}>
                   <AnimatedOnScroll animationIn="fadeInUpMedium">
                     <AboutCard
                       displayLayout={displayLayout}
                       title={company.company}
                       text={company.title}
+                      years={company.years}
                     />
                   </AnimatedOnScroll>
                 </Column>
-                <Column $tablet={5} $desktop={5} $largeDesktop={5} />
-                <Column $tablet={1} $desktop={1} $largeDesktop={1} />
+                <Column $desktop={5} $largeDesktop={5} />
+                <Column $desktop={1} $largeDesktop={1} />
               </AboutRow>
               <HideDesktop>
                 <Spacer />

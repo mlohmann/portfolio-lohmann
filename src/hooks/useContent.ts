@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchSupabaseContent, isSupabaseConfigured } from "@/data/supabase";
+
+import { fetchSupabaseContent, isSupabaseConfigured } from "../data/supabase";
 
 /** Consumer-facing query state, with absent data normalized to null. */
 interface FetchResult<T> {

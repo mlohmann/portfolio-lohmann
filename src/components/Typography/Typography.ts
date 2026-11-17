@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+
 import { colors, sizes, typography } from "@/style";
 
 const { sizing, font, lineHeight } = typography;
@@ -191,9 +192,9 @@ const AdditionalInfo = styled.h3`
     ${sizes.query.desktop} {
       content: "";
       display: block;
-      left: -20px;
-      height: 3px;
-      width: 10px;
+      left: ${sizes.markerDash.desktop.offset}px;
+      height: ${sizes.markerDash.desktop.height}px;
+      width: ${sizes.markerDash.desktop.width}px;
       top: 9px;
       background: ${colors.white};
       position: absolute;
@@ -211,21 +212,18 @@ export {
   H4,
   H5,
   H6,
-  IntroStyle,
   Paragraph,
   ListItem,
   Small,
-  H1Style,
-  H2Style,
-  H3Style,
-  H4Style,
-  H5Style,
-  H6Style,
-  ParagraphStyle,
-  SmallStyle,
-  FooterStyle,
   FooterText,
   AdditionalInfo,
   VisuallyHidden,
-  visuallyHiddenStyle,
+};
+
+export {
+  IntroStyle,
+  H4Style,
+  H6Style,
+  ParagraphStyle,
+  SmallStyle,
 };

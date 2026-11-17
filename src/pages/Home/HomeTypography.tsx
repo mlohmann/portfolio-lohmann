@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import styled, { css } from "styled-components";
 
-import { colors, typography, effects, sizes } from "@/style";
+import { animation, colors, typography, effects, sizes } from "@/style";
 import { IntroStyle } from "@/components";
 
 const { focus } = effects;
@@ -29,13 +29,13 @@ const spanEffects = css`
     text-underline-offset: 0.06em;
     text-decoration-skip-ink: auto;
     clip-path: inset(-0.2em 100% -0.3em 0);
-    transition: clip-path 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+    transition: clip-path ${animation.fast} ${animation.ease.standard};
   }
 
   &:hover span::after,
   &:focus-visible span::after {
     clip-path: inset(-0.2em 0 -0.3em 0);
-    transition-duration: 0.7s;
+    transition-duration: ${animation.slow};
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -48,13 +48,14 @@ const spanEffects = css`
 /** Introductory type treatment shared by homepage prose and inline links. */
 const introCommonStyles = css`
   ${IntroStyle}
-  font-weight: 100;
+  font-weight: ${typography.weight.regular};
 `;
 
 /** Homepage introduction copy; callers choose heading semantics with the as prop. */
 const IntroBody = styled.p`
   ${introCommonStyles}
   color: ${colors.textPrimary};
+  font-size: clamp(${typography.sizing.h5}, 4.7vw, ${typography.sizing.h3});
 
   &:focus {
     outline: none;
@@ -63,10 +64,12 @@ const IntroBody = styled.p`
 
 /** Inline route link that retains the introduction text sizing. */
 const IntroLink = styled(Link)`
-  ${introCommonStyles}
+  font: inherit;
   font-style: italic;
-  color: ${colors.textHighlight};
-  text-decoration: none;
+  color: ${colors.white};
+  text-decoration: underline;
+  text-decoration-color: ${colors.textHighlight};
+  text-underline-offset: 0.15em;
 
   ${spanEffects}
 
@@ -110,4 +113,26 @@ const NoWrap = styled.span`
   white-space: nowrap;
 `;
 
-export { IntroBody, IntroLink, IntroCTA, LinkedInCTA, NoWrap };
+/** Supporting prose stays subordinate to the introduction and main action. */
+const IntroSupport = styled.p`
+  font-family: ${typography.font.intro};
+  font-size: clamp(${typography.sizing.p}, 2.5vw, 2rem);
+  line-height: 1.5;
+  color: ${colors.white};
+  max-width: 65ch;
+`;
+
+/** Inline links and dividers wrap naturally with the available width. */
+const HomeActions = styled.div`
+  line-height: 1.8;
+`;
+
+export {
+  IntroBody,
+  IntroLink,
+  IntroCTA,
+  LinkedInCTA,
+  NoWrap,
+  IntroSupport,
+  HomeActions,
+};

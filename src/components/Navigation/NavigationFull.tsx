@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+
 import { animation, colors, sizes } from "@/style";
 
 /** Off-canvas navigation surface; its visibility state is controlled by Navigation. */
@@ -16,6 +17,8 @@ const NavigationFull = styled.div
   z-index: ${sizes.zIndex.drawer};
   width: ${sizes.drawerWidth}px;
   height: 100%;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
   background: ${colors.almostBlack};
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;

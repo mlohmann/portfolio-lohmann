@@ -1,13 +1,9 @@
 /** Smoke coverage for rendering the application through its real route tree. */
 import { render, screen } from "@testing-library/react";
-import {
-  createMemoryHistory,
-  createRouter,
-  RouterProvider,
-} from "@tanstack/react-router";
+import { createMemoryHistory, createRouter, RouterProvider } from "@tanstack/react-router";
 import { describe, expect, it } from "vitest";
 
-import { routeTree } from "@/RouteTree";
+import { routeTree } from "../RouteTree";
 
 describe("all pages", () => {
   it("renders without crashing", async () => {

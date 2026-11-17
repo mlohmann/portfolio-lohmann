@@ -1,7 +1,10 @@
-import { imageUrl } from "@/data/images";
 import { memo } from "react";
 import { Link } from "@tanstack/react-router";
+import styled from "styled-components";
 
+import { imageUrl } from "@/data/images";
+import config from "@/data/config";
+import type { LayoutType } from "@/types";
 import {
   AnimatedOnScroll,
   Column,
@@ -11,27 +14,26 @@ import {
   HideTouch,
   HideDesktop,
   FullWidth,
+  LazyImage,
 } from "@/components";
-
-import { ProjectType } from "../Project";
-import { ProjectDescription } from "@/pages/Project/ProjectTypography";
-import {
-  ProjectTitle,
-  ProjectHeading,
-} from "@/pages/Portfolio/PortfolioTypography";
+import type { ProjectType } from "../Project";
+import { ProjectDescription } from "../Project/ProjectTypography";
+import { ProjectTitle, ProjectHeading } from "./PortfolioTypography";
 import LearnMore from "./LearnMore";
 import PreviewRow from "./PreviewRow";
 import ImageWrapper from "@/components/ImageWrapper";
-import LazyImage from "@/components/LazyImage/LazyImage";
 import HorizontalSpacerWrapper from "./HorizontalSpacerWrapper";
 
+const PreviewImageLink = styled(Link)`
+  display: block;
+`;
+
 /** Optional card position and description-side selection for a portfolio preview. */
-export type LayoutType = {
-  /** Zero-based card position controlling lead-image priority and divider visibility. */
-  index?: number;
-  /** Which side of the preview row contains the project description. */
-  displayLayout?: "left" | "right";
-};
+type PreviewProps = ProjectType &
+  LayoutType & {
+    /** Zero-based card position controlling lead-image priority and divider visibility. */
+    index?: number;
+  };
 
 /** Project card shared by the portfolio list, with responsive layout variants. */
 const Preview = ({
@@ -41,7 +43,7 @@ const Preview = ({
   preview,
   index = 0,
   displayLayout = "left",
-}: ProjectType & LayoutType) => {
+}: PreviewProps) => {
   const projectLink = `/portfolio/project/${id}`;
 
   return (
@@ -70,7 +72,7 @@ const Preview = ({
                   <Spacer size="lg" />
                 </HideDesktop>
                 <ProjectHeading>
-                  <ProjectTitle from="/" to={projectLink}>
+                  <ProjectTitle to={projectLink}>
                     {title}
                   </ProjectTitle>
                 </ProjectHeading>
@@ -78,7 +80,7 @@ const Preview = ({
                 <ProjectDescription>{summary}</ProjectDescription>
                 <HideTouch>
                   <Spacer size="md" />
-                  <LearnMore url={`/portfolio/project/${id}`} />
+                  <LearnMore title={title} url={`/portfolio/project/${id}`} />
                 </HideTouch>
                 <HideDesktop>
                   <Spacer size="lg" />
@@ -92,20 +94,24 @@ const Preview = ({
       <Column $largeDesktop={6} $desktop={6}>
         <AnimatedOnScroll animationIn="fadeInUpMedium">
           <ImageWrapper>
-            <Link from="/" to={projectLink}>
+            <PreviewImageLink to={projectLink}>
               <LazyImage
-                src={imageUrl(preview.src, "/screens/")}
+                src={imageUrl(preview.src, config.screenPath)}
                 loading={index === 0 ? "eager" : "lazy"}
-                fetchPriority={index === 0 ? "high" : "auto"}
+                fetchPriority={index === 0 ? "high" : undefined}
                 alt={title}
                 width={preview.width}
                 height={preview.height}
               />
-            </Link>
+            </PreviewImageLink>
           </ImageWrapper>
           <HideDesktop>
             <Spacer size="md" />
-            <LearnMore url={`/portfolio/project/${id}`} size="lg" />
+            <LearnMore
+              title={title}
+              url={`/portfolio/project/${id}`}
+              size="lg"
+            />
           </HideDesktop>
         </AnimatedOnScroll>
       </Column>
@@ -114,3 +120,5 @@ const Preview = ({
 };
 
 export default memo(Preview);
+
+export type { LayoutType };

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { sizes, colors } from "@/style";
 import type { LayoutType } from "@/types";
 
@@ -7,8 +8,8 @@ const AboutDot = styled.div.withConfig({
   shouldForwardProp: (prop) => prop !== "displayLayout",
 })<LayoutType>`
   position: absolute;
-  width: ${sizes.spacing.sm}px;
-  height: ${sizes.spacing.sm}px;
+  width: ${sizes.timelineDot}px;
+  height: ${sizes.timelineDot}px;
   background-color: ${colors.timelineMarker};
   border: 3px solid ${colors.white};
   top: 26px;
@@ -18,8 +19,8 @@ const AboutDot = styled.div.withConfig({
   ${sizes.query.desktop} {
     ${({ displayLayout = "left" }) =>
       displayLayout === "left"
-        ? `right: -${sizes.spacing.sm}px;`
-        : `left: -${sizes.spacing.sm}px;`}
+        ? `right: -${sizes.timelineDot}px;`
+        : `left: -${sizes.timelineDot}px;`}
   }
   ${sizes.query.touch} {
     left: 0;

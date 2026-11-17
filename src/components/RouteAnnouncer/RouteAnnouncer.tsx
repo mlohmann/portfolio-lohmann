@@ -1,15 +1,17 @@
-import { useEffect, useRef, useState, ReactNode } from "react";
-import { VisuallyHidden } from "@/components/Typography";
+import { useEffect, useRef, useState } from "react";
+import type { ReactNode } from "react";
+
+import { VisuallyHidden } from "../Typography";
 
 let listeners: Array<(text: string) => void> = [];
 
 /** Programmatically triggers a polite route change announcement for assistive technologies. */
-export function announceRoute(text: string) {
+function announceRoute(text: string) {
   listeners.forEach((listener) => listener(text));
 }
 
 /** Accessible live region that announces page title changes after client-side navigation. */
-export const RouteAnnouncer = () => {
+const RouteAnnouncer = () => {
   const [announcement, setAnnouncement] = useState("");
 
   useEffect(() => {
@@ -42,7 +44,7 @@ export const RouteAnnouncer = () => {
 /**
  * Manages focus placement and route announcements across page transitions.
  * Orients keyboard and screen-reader users to the top heading or main content. */
-export function RouteFocusHandler({
+function RouteFocusHandler({
   pathname,
   children,
 }: {
@@ -59,14 +61,23 @@ export function RouteFocusHandler({
 
     let observer: MutationObserver | null = null;
 
+    let announceTimer: ReturnType<typeof setTimeout> | null = null;
+
     const focusTarget = () => {
-      const heading = document.querySelector<HTMLElement>("main h1");
+      const heading = document.querySelector<HTMLElement>(
+        'main h1, main [role="alert"]',
+      );
       if (heading) {
         if (!heading.hasAttribute("tabindex")) {
           heading.setAttribute("tabindex", "-1");
         }
-        heading.focus({ preventScroll: false });
-        announceRoute(document.title);
+        // The router owns scroll reset and Back/Forward restoration.
+        heading.focus({ preventScroll: true });
+        // Defer announcement until passive Seo effects have updated document.title.
+        if (announceTimer) clearTimeout(announceTimer);
+        announceTimer = setTimeout(() => {
+          announceRoute(document.title || heading.textContent?.trim() || "");
+        }, 0);
         return true;
       }
       return false;
@@ -78,7 +89,7 @@ export function RouteFocusHandler({
     if (!focused) {
       // Fall back to focusing the main container while async route content resolves.
       const main = document.getElementById("main");
-      main?.focus({ preventScroll: false });
+      main?.focus({ preventScroll: true });
 
       // Observe main until the primary h1 mounts from an asynchronous fetch or suspense boundary.
       if (main && typeof MutationObserver !== "undefined") {
@@ -93,6 +104,9 @@ export function RouteFocusHandler({
     }
 
     return () => {
+      if (announceTimer) {
+        clearTimeout(announceTimer);
+      }
       if (observer) {
         observer.disconnect();
       }
@@ -101,3 +115,7 @@ export function RouteFocusHandler({
 
   return <>{children}</>;
 }
+
+export { RouteAnnouncer, RouteFocusHandler };
+
+export { announceRoute };

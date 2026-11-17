@@ -1,6 +1,8 @@
 /** Optional layout direction used by responsive display components. */
-export type LayoutType = { displayLayout?: string };
+type LayoutType = { displayLayout?: "left" | "right" };
 /** Destination URL required by link-oriented components. */
-export type LinkType = { url: string };
+type LinkType = { url: string };
 /** Direction relative to the current project in the previous/next navigation. */
-export type Direction = { direction: "next" | "prev" };
+type Direction = { direction: "next" | "prev" };
+
+export type { LayoutType, LinkType, Direction };
