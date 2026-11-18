@@ -7,10 +7,12 @@ permissions:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
   validate:
+    needs: release-preflight
+    if: ${{ !cancelled() && (needs.release-preflight.result == 'success' || needs.release-preflight.result == 'skipped') }}
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     env:
@@ -46,3 +48,144 @@ jobs:
         run: npm run test:all
       - name: Build Storybook
         run: npm run build-storybook
+
+  release-preflight:
+    if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    environment: production
+    permissions: {}
+    steps:
+      - name: Require FTPS configuration
+        shell: bash
+        env:
+          FTPS_HOST: ${{ secrets.FTPS_HOST }}
+          FTPS_USERNAME: ${{ secrets.FTPS_USERNAME }}
+          FTPS_PASSWORD: ${{ secrets.FTPS_PASSWORD }}
+          FTPS_DIRECTORY: ${{ vars.FTPS_DIRECTORY }}
+        run: |
+          missing=0
+          for setting in FTPS_HOST FTPS_USERNAME FTPS_PASSWORD FTPS_DIRECTORY; do
+            if [[ ! "${!setting}" =~ [^[:space:]] ]]; then
+              echo "::error::Missing production setting: $setting"
+              missing=1
+            elif [[ "${!setting}" == *$'\r'* || "${!setting}" == *$'\n'* ]]; then
+              echo "::error::Invalid production setting: $setting"
+              missing=1
+            fi
+          done
+          exit "$missing"
+
+  release-build:
+    needs: [validate, release-preflight]
+    outputs:
+      artifact-name: ${{ steps.artifact-name.outputs.name }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version-file: .nvmrc
+      - run: npm ci
+      - name: Build release
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ vars.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
+        run: |
+          npm run build
+          test -s dist/index.html
+          test -s dist/.htaccess
+          tar -czf "$RUNNER_TEMP/portfolio-release.tar.gz" -C dist .
+      - name: Select release artifact name
+        id: artifact-name
+        run: echo "name=portfolio-release-$GITHUB_RUN_ATTEMPT" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ${{ steps.artifact-name.outputs.name }}
+          path: ${{ runner.temp }}/portfolio-release.tar.gz
+          if-no-files-found: error
+          retention-days: 3
+
+  release-deploy:
+    needs: release-build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment: production
+    permissions: {}
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: ${{ needs.release-build.outputs.artifact-name }}
+          path: release
+      - name: Upload release over explicit FTPS
+        env:
+          FTPS_HOST: ${{ secrets.FTPS_HOST }}
+          FTPS_USERNAME: ${{ secrets.FTPS_USERNAME }}
+          FTPS_PASSWORD: ${{ secrets.FTPS_PASSWORD }}
+          FTPS_DIRECTORY: ${{ vars.FTPS_DIRECTORY }}
+        run: |
+          python3 - <<'PY'
+          import ftplib
+          import os
+          import ssl
+          import tarfile
+          from pathlib import Path
+          from uuid import uuid4
+
+          settings = {}
+          for name in ("FTPS_HOST", "FTPS_USERNAME", "FTPS_PASSWORD", "FTPS_DIRECTORY"):
+              value = os.environ.get(name, "")
+              if not value.strip() or any(char in value for char in "\r\n\0"):
+                  raise SystemExit(f"::error::Invalid or missing production setting: {name}")
+              settings[name] = value
+
+          root = Path("dist")
+          with tarfile.open("release/portfolio-release.tar.gz", "r:gz") as archive:
+              archive.extractall(root, filter="data")
+          if not (root / "index.html").is_file() or not (root / ".htaccess").is_file():
+              raise SystemExit("::error::Release is missing index.html or .htaccess")
+
+          stage = "connect and authenticate"
+          try:
+              with ftplib.FTP_TLS(context=ssl.create_default_context(), timeout=30) as ftp:
+                  ftp.connect(settings["FTPS_HOST"], port=21)
+                  ftp.login(settings["FTPS_USERNAME"], settings["FTPS_PASSWORD"])
+                  ftp.prot_p()
+                  stage = "open the configured remote directory"
+                  ftp.cwd(settings["FTPS_DIRECTORY"])
+                  stage = "upload the release"
+                  # Publish assets before HTML that references them.
+                  files = [path for path in root.rglob("*") if path.is_file()]
+                  files.sort(key=lambda path: (path.suffix == ".html", path))
+                  directories = set()
+                  for path in files:
+                      remote = path.relative_to(root)
+                      for parent in reversed(remote.parents[:-1]):
+                          if parent not in directories:
+                              try:
+                                  ftp.mkd(parent.as_posix())
+                              except ftplib.error_perm:
+                                  # Confirm the directory exists and is accessible.
+                                  current = ftp.pwd()
+                                  ftp.cwd(parent.as_posix())
+                                  ftp.cwd(current)
+                              directories.add(parent)
+                      temporary = remote.with_name(f".upload-{uuid4().hex}").as_posix()
+                      try:
+                          with path.open("rb") as contents:
+                              ftp.storbinary(f"STOR {temporary}", contents)
+                          ftp.rename(temporary, remote.as_posix())
+                      except ftplib.all_errors:
+                          try:
+                              ftp.delete(temporary)
+                          except ftplib.all_errors:
+                              pass
+                          raise
+          except ftplib.all_errors:
+              # Raw server replies can contain account or connection details.
+              raise SystemExit(f"::error::FTPS failed during step: {stage}") from None
+          print(f"Uploaded {len(files)} release files over FTPS.")
+          PY
