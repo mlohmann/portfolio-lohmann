@@ -219,5 +219,13 @@ The upload preserves existing files that are absent from the build. If the
 environment requires reviewers, GitHub gates both preflight and upload.
 
 For CMS mode, add both public build values documented above as repository
-Actions variables. Leave both unset for bundled content. Store deployment
-credentials only as environment secrets.
+Actions variables. Store deployment credentials only as environment secrets.
+
+For bundled content, leave both public build values unset. Before the first
+deployment to an empty web root, upload the approved project and news originals
+and responsive WebP variants from [Images and assets](#images-and-assets).
+Place them under `FTPS_DIRECTORY` in `screens/`, `press-images/`,
+`optimized/screens/`, and `optimized/press-images/`, preserving filenames and
+subdirectories. GitHub Actions builds from a checkout that lacks these images.
+Later releases preserve the uploaded files. Upload any new or changed images
+before releasing content that references them.
