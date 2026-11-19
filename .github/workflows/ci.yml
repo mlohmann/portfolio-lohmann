@@ -130,6 +130,7 @@ jobs:
           python3 - <<'PY'
           import ftplib
           import os
+          import socket
           import ssl
           import tarfile
           from pathlib import Path
@@ -148,11 +149,15 @@ jobs:
           if not (root / "index.html").is_file() or not (root / ".htaccess").is_file():
               raise SystemExit("::error::Release is missing index.html or .htaccess")
 
-          stage = "connect and authenticate"
+          stage = "connect to the FTPS server on port 21"
           try:
               with ftplib.FTP_TLS(context=ssl.create_default_context(), timeout=30) as ftp:
                   ftp.connect(settings["FTPS_HOST"], port=21)
+                  stage = "negotiate explicit TLS"
+                  ftp.auth()
+                  stage = "authenticate the deployment account"
                   ftp.login(settings["FTPS_USERNAME"], settings["FTPS_PASSWORD"])
+                  stage = "enable encrypted data transfers"
                   ftp.prot_p()
                   stage = "open the configured remote directory"
                   ftp.cwd(settings["FTPS_DIRECTORY"])
@@ -184,8 +189,24 @@ jobs:
                           except ftplib.all_errors:
                               pass
                           raise
-          except ftplib.all_errors:
+                  stage = "close the FTPS session"
+          except ftplib.all_errors as error:
               # Raw server replies can contain account or connection details.
-              raise SystemExit(f"::error::FTPS failed during step: {stage}") from None
+              detail = "connection or protocol error"
+              if isinstance(error, socket.gaierror):
+                  detail = "hostname lookup failed"
+              elif isinstance(error, TimeoutError):
+                  detail = "connection or operation timed out"
+              elif isinstance(error, ConnectionRefusedError):
+                  detail = "connection refused"
+              elif isinstance(error, ssl.SSLCertVerificationError):
+                  detail = "server certificate verification failed"
+              elif isinstance(error, ssl.SSLError):
+                  detail = "TLS error"
+              elif isinstance(error, ftplib.Error):
+                  code = str(error)[:3]
+                  if len(code) == 3 and code.isascii() and code.isdecimal():
+                      detail = f"FTP reply {code}"
+              raise SystemExit(f"::error::FTPS could not {stage} ({detail}).") from None
           print(f"Uploaded {len(files)} release files over FTPS.")
           PY
