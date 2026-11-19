@@ -182,9 +182,8 @@ publishing to restore the intended production CMS configuration.
 
 GitHub Actions installs the pinned Node runtime, isolated Pillow tooling, and
 Chrome for Testing. It runs type checking, the complete test suite, and a
-Storybook build with read-only repository permissions. CI uses no CMS credentials,
-performs no uploads or database changes, and does not deploy the site. Storybook
-uses the Vite integration and the same self-hosted fonts/global styles as the app.
+Storybook build with read-only repository permissions. Validation uses no CMS credentials and
+performs no uploads or database changes. Storybook uses the Vite integration and the same self-hosted fonts/global styles as the app.
 
 For a production Lighthouse audit, use a clean Chrome profile or disable
 extensions. With the preview server running:
@@ -197,3 +196,36 @@ Add `--preset=desktop` and change the report path for the desktop audit. Reports
 are ignored. Local scores do not verify hosting behavior; audit the deployed URL
 separately after deployment. Repository visibility and collaborator permissions
 are managed by the owner.
+
+## Production deployment
+
+After a push to `master` (including a merge), GitHub Actions checks deployment
+configuration, runs validation, builds the release, and uploads `dist` to the
+web root. To retry a release from the current `master` tip, run **Validate
+repository** manually in Actions and select `master`. Pull requests and other
+branches run validation without accessing the deployment environment.
+
+In GitHub **Settings → Environments**, create `production` and restrict its
+deployment branches to `master`. Add these environment secrets.
+
+- `FTPS_HOST` is the hostname on the server's TLS certificate, without a scheme or port.
+- `FTPS_USERNAME` and `FTPS_PASSWORD` are the dedicated deployment account credentials.
+
+Set the environment variable `FTPS_DIRECTORY` to the existing web root as seen
+by that account, for example `/public_html`. The server must support explicit
+FTPS on port 21 with a trusted certificate and allow the account to create
+directories, upload files, and rename temporary files over existing files.
+The upload preserves existing files that are absent from the build. If the
+environment requires reviewers, GitHub gates both preflight and upload.
+
+For CMS mode, add both public build values documented above as repository
+Actions variables. Store deployment credentials only as environment secrets.
+
+For bundled content, leave both public build values unset. Before the first
+deployment to an empty web root, upload the approved project and news originals
+and responsive WebP variants from [Images and assets](#images-and-assets).
+Place them under `FTPS_DIRECTORY` in `screens/`, `press-images/`,
+`optimized/screens/`, and `optimized/press-images/`, preserving filenames and
+subdirectories. GitHub Actions builds from a checkout that lacks these images.
+Later releases preserve the uploaded files. Upload any new or changed images
+before releasing content that references them.
